@@ -1,0 +1,967 @@
+{
+  "persona": {
+    "id": "front_of_house",
+    "name": "Front-of-house lead",
+    "short": "Host",
+    "tagline": "Host or floor manager running the door, the phone and the floor during service",
+    "description": "Stands between the line, the phone and the dining room with busy hands and seconds to spare. Oksana (Sunny Side, ~85% walk-ins) manages up to 15 waiting groups on a clipboard and loses 10–12 tables a shift to walk-aways; Devon (Harbor & Pine, reservations-led) fights 30 calls a day, messy notes, guessed overbooking and Sunday staffing guesswork. Both measure tools by taps and minutes, and both are comfortable paying per SMS because one saved table pays for it.",
+    "goals": [
+      "Seat the next party the moment a table is cleared",
+      "Stop shouting names and answering 'how long?' all shift",
+      "Keep the phone from pulling them away from the door",
+      "Get allergies to the kitchen without anyone missing them",
+      "Staff the week from a forecast instead of a guess"
+    ],
+    "frustrations": [
+      "Clipboard queues and guests who leave without telling anyone",
+      "Servers not signalling when tables are clear",
+      "One free-text notes blob that hides allergies",
+      "Tools that take more than two taps or need clean hands"
+    ],
+    "products": [
+      "tably"
+    ],
+    "sources": [
+      "260915-oksana",
+      "260922-devon"
+    ],
+    "evidence_level": "moderate",
+    "evidence_note": "Two interviewees with mostly 'does'/'pays' evidence, but in very different settings: a walk-in brunch café (Oksana, interviewed in Ukrainian, quotes translated) and a reservation-led dinner restaurant (Devon). Waitlist findings rest on Oksana alone; phone, notes, staffing and overbooking findings on Devon alone.",
+    "jobs": [
+      {
+        "id": "front_of_house.j1",
+        "statement": "When 13–15 groups are waiting outside, I want guests to add themselves and get a text when their table is ready, so I can stop shouting names and losing walk-aways.",
+        "importance": 3,
+        "stage": "front_of_house.manage_waitlist",
+        "for": [
+          "260915-oksana-10",
+          "260915-oksana-11",
+          "260915-oksana-04",
+          "260915-oksana-09",
+          "260915-oksana-08",
+          "261001-priya-19"
+        ],
+        "against": []
+      },
+      {
+        "id": "front_of_house.j2",
+        "statement": "When a table is cleared, I want to see it at once, so I can seat the next party without chasing servers.",
+        "importance": 3,
+        "stage": "front_of_house.seat_guests",
+        "for": [
+          "260915-oksana-21",
+          "260915-oksana-22",
+          "260922-devon-02"
+        ],
+        "against": []
+      },
+      {
+        "id": "front_of_house.j3",
+        "statement": "When the phone rings during the rush, I want callers sent to a self-serve link, so I can stay with the guests in front of me.",
+        "importance": 2,
+        "stage": "front_of_house.answer_requests",
+        "for": [
+          "260915-oksana-07",
+          "260922-devon-14",
+          "260922-devon-15",
+          "260922-devon-16"
+        ],
+        "against": []
+      },
+      {
+        "id": "front_of_house.j4",
+        "statement": "When I build next week's schedule, I want a covers forecast by hour, so I can staff the right number of servers.",
+        "importance": 2,
+        "stage": "front_of_house.plan_shift",
+        "for": [
+          "260922-devon-06",
+          "260922-devon-07",
+          "260922-devon-23"
+        ],
+        "against": []
+      },
+      {
+        "id": "front_of_house.j5",
+        "statement": "When a guest has an allergy, I want it as a structured tag on the kitchen ticket, so nobody misses it.",
+        "importance": 3,
+        "stage": "front_of_house.share_guest_notes",
+        "for": [
+          "260922-devon-19",
+          "260922-devon-20",
+          "261008-marcus-08",
+          "261008-marcus-14"
+        ],
+        "against": []
+      },
+      {
+        "id": "front_of_house.j6",
+        "statement": "When guests keep asking how long, I want them to see their own place in line, so I can stop answering 40 times a shift.",
+        "importance": 2,
+        "stage": "front_of_house.manage_waitlist",
+        "for": [
+          "260915-oksana-06",
+          "260915-oksana-23",
+          "260915-oksana-03",
+          "260915-oksana-24"
+        ],
+        "against": []
+      },
+      {
+        "id": "front_of_house.j7",
+        "statement": "When no-shows and late cancels hit prime slots, I want reminders, deposits and data-based overbooking, so I can keep seats full.",
+        "importance": 2,
+        "stage": "front_of_house.recover_no_shows",
+        "for": [
+          "260922-devon-03",
+          "260922-devon-10",
+          "260922-devon-21",
+          "260922-devon-22",
+          "260922-devon-05",
+          "260915-oksana-18"
+        ],
+        "against": []
+      },
+      {
+        "id": "front_of_house.j8",
+        "statement": "When my hands are full or gloved, I want every action in two taps on big buttons, so I can actually use the tool mid-service.",
+        "importance": 3,
+        "stage": "front_of_house.seat_guests",
+        "for": [
+          "260922-devon-25",
+          "260915-oksana-25",
+          "260922-devon-09"
+        ],
+        "against": []
+      }
+    ]
+  },
+  "journey": [
+    {
+      "stage": "front_of_house.plan_shift",
+      "title": "Plan the week's staffing",
+      "goal": "Schedule the right number of servers for each day",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "front_of_house.plan_shift.p1",
+            "text": "Devon spends ~1.5 hours every Sunday on the schedule and gets it wrong about once a week, at ~$140 per server shift.",
+            "for": [
+              "260922-devon-06"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "front_of_house.plan_shift.j1",
+            "text": "Turn booked covers plus history into a server count per day.",
+            "for": [
+              "260922-devon-07"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "front_of_house.plan_shift.t1",
+            "text": "Google Sheet, SeatNow booked covers and last year's numbers.",
+            "for": [
+              "260922-devon-06"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "front_of_house.plan_shift.o1",
+            "text": "Gap: Tably has no forecast; the only evidence is one floor manager.",
+            "for": [
+              "260922-devon-07"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "front_of_house.plan_shift.f1",
+            "text": "Covers and staffing forecast",
+            "for": [
+              "260922-devon-07",
+              "260922-devon-23"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "front_of_house.s5"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "front_of_house.answer_requests",
+      "title": "Answer calls and requests",
+      "goal": "Handle booking requests without leaving the door",
+      "emotion": -2,
+      "rows": {
+        "pains": [
+          {
+            "id": "front_of_house.answer_requests.p1",
+            "text": "About 30 calls a day at 2–3 minutes each cost Harbor & Pine ~1.5 hours of host time; 5–6 a night go to voicemail.",
+            "for": [
+              "260922-devon-14"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "front_of_house.answer_requests.p2",
+            "text": "At Sunny Side 4–5 peak-hour calls an hour only ask whether a table is free.",
+            "for": [
+              "260915-oksana-07"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "front_of_house.answer_requests.j1",
+            "text": "Let guests add a person or cancel without calling.",
+            "for": [
+              "260922-devon-16"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "front_of_house.answer_requests.t1",
+            "text": "Host-stand phone and voicemail.",
+            "for": [
+              "260922-devon-14",
+              "260915-oksana-07"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "front_of_house.answer_requests.o1",
+            "text": "Tably offers no phone deflection or guest self-edit flow yet.",
+            "for": [],
+            "against": [],
+            "assumption": true
+          }
+        ],
+        "features": [
+          {
+            "id": "front_of_house.answer_requests.f1",
+            "text": "Phone-to-link deflection with guest self-edit",
+            "for": [
+              "260922-devon-15",
+              "260922-devon-16"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "front_of_house.s4"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "front_of_house.manage_waitlist",
+      "title": "Manage the walk-in line",
+      "goal": "Turn a crowd on the street into an orderly, self-updating queue",
+      "emotion": -2,
+      "rows": {
+        "pains": [
+          {
+            "id": "front_of_house.manage_waitlist.p1",
+            "text": "Names go on a clipboard and the host shouts them to ~50 people on the street.",
+            "for": [
+              "260915-oksana-02"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "front_of_house.manage_waitlist.p2",
+            "text": "Guests told 20 minutes wait 40–60 and get angry.",
+            "for": [
+              "260915-oksana-03"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "front_of_house.manage_waitlist.p3",
+            "text": "10–12 times a shift the called party has left and the table sits empty 3–7 minutes.",
+            "for": [
+              "260915-oksana-04",
+              "260915-oksana-05"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "front_of_house.manage_waitlist.p4",
+            "text": "1–1.5 hours a shift go on explaining the wait.",
+            "for": [
+              "260915-oksana-06"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "front_of_house.manage_waitlist.j1",
+            "text": "Have guests sign themselves up by QR code with name, party size and number.",
+            "for": [
+              "260915-oksana-10",
+              "260915-oksana-11"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "front_of_house.manage_waitlist.j2",
+            "text": "Add a walk-in in two taps.",
+            "for": [
+              "260922-devon-09"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "front_of_house.manage_waitlist.t1",
+            "text": "Clipboard list; QueueBee free trial, dropped when it became paid (~$45/month, second-hand); walk-in tally marks.",
+            "for": [
+              "260915-oksana-02",
+              "260915-oksana-08",
+              "260922-devon-08"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "front_of_house.manage_waitlist.o1",
+            "text": "Tably's waitlist is the core fit here, but only if guests enter themselves; QueueBee failed on host data entry.",
+            "for": [
+              "260915-oksana-10",
+              "260915-oksana-08"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "front_of_house.manage_waitlist.f1",
+            "text": "QR self-serve waitlist with table-ready SMS",
+            "for": [
+              "260915-oksana-11",
+              "260915-oksana-09",
+              "260915-oksana-14"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "front_of_house.s1"
+          },
+          {
+            "id": "front_of_house.manage_waitlist.f2",
+            "text": "Outside queue screen",
+            "for": [
+              "260915-oksana-23"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "front_of_house.s2"
+          },
+          {
+            "id": "front_of_house.manage_waitlist.f3",
+            "text": "Two-tap host mode with an add-walk-in button",
+            "for": [
+              "260922-devon-09"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "front_of_house.s8"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "front_of_house.seat_guests",
+      "title": "Seat guests and track tables",
+      "goal": "Know which tables are free right now and seat fast",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "front_of_house.seat_guests.p1",
+            "text": "Servers don't say when a table is cleared, so the host outside keeps asking.",
+            "for": [
+              "260915-oksana-21"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "front_of_house.seat_guests.p2",
+            "text": "Anything over two taps goes unused by a host with a ringing phone and a line.",
+            "for": [
+              "260922-devon-25"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "front_of_house.seat_guests.j1",
+            "text": "See free, clearing and occupied tables, plus who asked for the check.",
+            "for": [
+              "260915-oksana-22"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "front_of_house.seat_guests.t1",
+            "text": "SeatNow floor view showing seated, dessert and check-requested.",
+            "for": [
+              "260922-devon-02"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "front_of_house.seat_guests.o1",
+            "text": "Any Tably host screen must work in two taps with big buttons for gloved or saucy hands.",
+            "for": [
+              "260922-devon-25",
+              "260915-oksana-25"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "front_of_house.seat_guests.f1",
+            "text": "Three-colour table status with a check-requested signal",
+            "for": [
+              "260915-oksana-22",
+              "260915-oksana-21"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "front_of_house.s3"
+          },
+          {
+            "id": "front_of_house.seat_guests.f2",
+            "text": "Two-tap host mode",
+            "for": [
+              "260922-devon-25",
+              "260915-oksana-25"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "front_of_house.s8"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "front_of_house.share_guest_notes",
+      "title": "Pass guest notes on",
+      "goal": "Make sure allergies and occasions reach the right people",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "front_of_house.share_guest_notes.p1",
+            "text": "Shellfish allergy, anniversary and high chair share one notes blob and the host misses them.",
+            "for": [
+              "260922-devon-19"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "front_of_house.share_guest_notes.j1",
+            "text": "Get the allergy onto the kitchen ticket.",
+            "for": [
+              "260922-devon-20"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "front_of_house.share_guest_notes.t1",
+            "text": "SeatNow free-text notes field.",
+            "for": [
+              "260922-devon-19"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "front_of_house.share_guest_notes.o1",
+            "text": "Tably has no structured guest tags yet; diners also doubt notes are read.",
+            "for": [
+              "261008-marcus-14"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "front_of_house.share_guest_notes.f1",
+            "text": "Structured guest tags on kitchen tickets",
+            "for": [
+              "260922-devon-20",
+              "260922-devon-19"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "front_of_house.s6"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "front_of_house.recover_no_shows",
+      "title": "Recover no-show seats",
+      "goal": "Keep prime seats full despite no-shows and late cancels",
+      "emotion": 0,
+      "rows": {
+        "pains": [
+          {
+            "id": "front_of_house.recover_no_shows.p1",
+            "text": "Late cancels, like 5:30 for 7:00, are the top remaining problem.",
+            "for": [
+              "260922-devon-05"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "front_of_house.recover_no_shows.p2",
+            "text": "A birthday party of eight didn't show or call after the table was decorated.",
+            "for": [
+              "260915-oksana-18"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "front_of_house.recover_no_shows.j1",
+            "text": "Overbook the 7:30 slot by two covers on ~7% expected no-shows.",
+            "for": [
+              "260922-devon-21"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "front_of_house.recover_no_shows.j2",
+            "text": "Deposit groups of eight or more, never couples at brunch.",
+            "for": [
+              "260915-oksana-19",
+              "260922-devon-13"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "front_of_house.recover_no_shows.t1",
+            "text": "SeatNow SMS cut no-shows from ~12% to 6–7%; a $10/head refundable prime-slot deposit cut them from 8% to under 2%.",
+            "for": [
+              "260922-devon-03",
+              "260922-devon-10"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "front_of_house.recover_no_shows.o1",
+            "text": "Gap: overbooking is a guess that backfired twice last summer; Tably offers no prediction.",
+            "for": [
+              "260922-devon-22"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "front_of_house.recover_no_shows.f1",
+            "text": "No-show prediction and smart overbooking",
+            "for": [
+              "260922-devon-22",
+              "260922-devon-23"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "front_of_house.s7"
+          }
+        ]
+      }
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "front_of_house.o1",
+      "title": "Let walk-ins queue themselves",
+      "stage": "front_of_house.manage_waitlist",
+      "product": "tably",
+      "for": [
+        "260915-oksana-01",
+        "260915-oksana-02",
+        "260915-oksana-10",
+        "260915-oksana-11",
+        "260922-devon-08"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.o2",
+      "title": "Cut walk-aways and empty-table minutes",
+      "stage": "front_of_house.manage_waitlist",
+      "product": "tably",
+      "for": [
+        "260915-oksana-04",
+        "260915-oksana-05",
+        "260915-oksana-09",
+        "260915-oksana-14",
+        "260915-oksana-17"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.o3",
+      "title": "Stop answering 'how long?'",
+      "stage": "front_of_house.manage_waitlist",
+      "product": "tably",
+      "for": [
+        "260915-oksana-06",
+        "260915-oksana-23",
+        "260915-oksana-03"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.o4",
+      "title": "Know the moment a table frees up",
+      "stage": "front_of_house.seat_guests",
+      "product": "tably",
+      "for": [
+        "260915-oksana-21",
+        "260915-oksana-22",
+        "260922-devon-02"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.o5",
+      "title": "Take the phone off the host stand",
+      "stage": "front_of_house.answer_requests",
+      "product": "tably",
+      "for": [
+        "260922-devon-14",
+        "260915-oksana-07",
+        "260922-devon-15",
+        "260922-devon-16"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.o6",
+      "title": "Staff the week from a forecast",
+      "stage": "front_of_house.plan_shift",
+      "product": "tably",
+      "for": [
+        "260922-devon-06",
+        "260922-devon-07",
+        "260922-devon-23"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.o7",
+      "title": "Get allergies to the kitchen reliably",
+      "stage": "front_of_house.share_guest_notes",
+      "product": "tably",
+      "for": [
+        "260922-devon-19",
+        "260922-devon-20",
+        "261008-marcus-14",
+        "261008-marcus-08"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.o8",
+      "title": "Recover no-show and late-cancel seats",
+      "stage": "front_of_house.recover_no_shows",
+      "product": "tably",
+      "for": [
+        "260922-devon-05",
+        "260922-devon-21",
+        "260922-devon-03",
+        "260915-oksana-18"
+      ],
+      "against": []
+    }
+  ],
+  "solutions": [
+    {
+      "id": "front_of_house.s1",
+      "title": "Run a QR self-serve waitlist",
+      "description": "Guests scan a QR code at the door, enter name, party size and phone, and get an SMS when their table is ready with a five-minute hold; their link shows their position and lets them cancel. The host sees a live list without typing.",
+      "product": "tably",
+      "personas": [
+        "front_of_house"
+      ],
+      "stage": "front_of_house.manage_waitlist",
+      "opportunities": [
+        "front_of_house.o1",
+        "front_of_house.o2",
+        "front_of_house.o3"
+      ],
+      "kano": "performance",
+      "reach": 3,
+      "impact": 3,
+      "confidence": 0.8,
+      "effort": 6,
+      "rationale": "Oksana ran a similar tool (QueueBee) and loses 10–12 tables a shift to walk-aways ('does'), and a diner used one happily; but host evidence is one person and the halving estimate is her guess.",
+      "for": [
+        "260915-oksana-10",
+        "260915-oksana-11",
+        "260915-oksana-08",
+        "260915-oksana-09",
+        "260915-oksana-04",
+        "260915-oksana-05",
+        "260915-oksana-14",
+        "260915-oksana-24",
+        "260915-oksana-17",
+        "261001-priya-19",
+        "260903-lucia-24"
+      ],
+      "against": [
+        "261001-priya-12"
+      ]
+    },
+    {
+      "id": "front_of_house.s2",
+      "title": "Show the queue on an outside screen",
+      "description": "A public screen at the door showing how many groups are ahead, so guests stop asking the host how long.",
+      "product": "tably",
+      "personas": [
+        "front_of_house"
+      ],
+      "stage": "front_of_house.manage_waitlist",
+      "opportunities": [
+        "front_of_house.o3"
+      ],
+      "kano": "delighter",
+      "reach": 1,
+      "impact": 1,
+      "confidence": 0.5,
+      "effort": 3,
+      "rationale": "One host asked for it ('said'); the guest-link position in the waitlist may cover most of the need.",
+      "for": [
+        "260915-oksana-23",
+        "260915-oksana-06"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.s3",
+      "title": "Show three-colour table status",
+      "description": "Green/yellow/red table states that servers update in one tap, plus a check-requested flag that predicts a free table in ~10 minutes.",
+      "product": "tably",
+      "personas": [
+        "front_of_house"
+      ],
+      "stage": "front_of_house.seat_guests",
+      "opportunities": [
+        "front_of_house.o4"
+      ],
+      "kano": "performance",
+      "reach": 2,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 5,
+      "rationale": "Devon relies on SeatNow's version daily ('does') and Oksana's seating stalls without it; both work in different venue types.",
+      "for": [
+        "260915-oksana-21",
+        "260915-oksana-22",
+        "260922-devon-02"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.s4",
+      "title": "Deflect calls to a booking link",
+      "description": "A phone option that texts the caller a booking link, plus a guest link to change party size or cancel without calling.",
+      "product": "tably",
+      "personas": [
+        "front_of_house"
+      ],
+      "stage": "front_of_house.answer_requests",
+      "opportunities": [
+        "front_of_house.o5"
+      ],
+      "kano": "performance",
+      "reach": 3,
+      "impact": 2,
+      "confidence": 0.5,
+      "effort": 4,
+      "rationale": "Call volume is measured at one restaurant and noted at another, but the deflection idea itself is only 'said' by Devon.",
+      "for": [
+        "260922-devon-14",
+        "260922-devon-15",
+        "260922-devon-16",
+        "260915-oksana-07",
+        "261001-priya-02",
+        "261001-priya-21"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.s5",
+      "title": "Forecast covers and staffing",
+      "description": "Predict covers by hour from bookings, walk-ins and last year's history, and recommend server counts for the week.",
+      "product": "tably",
+      "personas": [
+        "front_of_house"
+      ],
+      "stage": "front_of_house.plan_shift",
+      "opportunities": [
+        "front_of_house.o6"
+      ],
+      "kano": "performance",
+      "reach": 1,
+      "impact": 2,
+      "confidence": 0.5,
+      "effort": 8,
+      "rationale": "Strong pain and a named +$50/month from one floor manager only; thin and expensive to build well.",
+      "for": [
+        "260922-devon-06",
+        "260922-devon-07",
+        "260922-devon-23"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.s6",
+      "title": "Tag guest notes for the kitchen",
+      "description": "Structured tags (allergy, high chair, wheelchair, birthday) on each booking, with allergies printed on the kitchen ticket.",
+      "product": "tably",
+      "personas": [
+        "front_of_house"
+      ],
+      "stage": "front_of_house.share_guest_notes",
+      "opportunities": [
+        "front_of_house.o7"
+      ],
+      "kano": "must",
+      "reach": 2,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 4,
+      "rationale": "A floor manager sees allergies missed today ('does') and a diner fears exactly that; safety makes this a must.",
+      "for": [
+        "260922-devon-19",
+        "260922-devon-20",
+        "261008-marcus-14",
+        "261008-marcus-08",
+        "261008-marcus-23"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.s7",
+      "title": "Predict no-shows and suggest overbooking",
+      "description": "Use history to predict no-shows per slot and suggest how many covers to overbook, replacing a fixed guess.",
+      "product": "tably",
+      "personas": [
+        "front_of_house"
+      ],
+      "stage": "front_of_house.recover_no_shows",
+      "opportunities": [
+        "front_of_house.o8"
+      ],
+      "kano": "delighter",
+      "reach": 1,
+      "impact": 1,
+      "confidence": 0.5,
+      "effort": 6,
+      "rationale": "One floor manager overbooks by guess today ('does') and asks for this, but nobody else mentioned it.",
+      "for": [
+        "260922-devon-21",
+        "260922-devon-22",
+        "260922-devon-23",
+        "260922-devon-05"
+      ],
+      "against": []
+    },
+    {
+      "id": "front_of_house.s8",
+      "title": "Build a two-tap host mode",
+      "description": "A host screen with big buttons where adding a walk-in, seating or marking a table takes at most two taps, usable with gloves.",
+      "product": "tably",
+      "personas": [
+        "front_of_house"
+      ],
+      "stage": "front_of_house.seat_guests",
+      "opportunities": [
+        "front_of_house.o1",
+        "front_of_house.o4"
+      ],
+      "kano": "must",
+      "reach": 2,
+      "impact": 2,
+      "confidence": 0.5,
+      "effort": 3,
+      "rationale": "Both front-of-house interviewees set this bar explicitly ('said'); it is a usability constraint on the other features.",
+      "for": [
+        "260922-devon-25",
+        "260922-devon-09",
+        "260915-oksana-25",
+        "260915-oksana-10"
+      ],
+      "against": []
+    }
+  ]
+}

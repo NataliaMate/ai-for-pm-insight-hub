@@ -1,0 +1,21 @@
+{
+  "name": "ai-for-pm-insight-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Insight Hub: turn customer-interview transcripts into personas, journey maps and RICE-ranked features with Claude. Runs on your own computer.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "postinstall": "node scripts/check-env.js",
+    "predev": "node scripts/check-env.js",
+    "dev": "node --watch-path=server server/index.js",
+    "prestart": "node scripts/check-env.js",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.8.0"
+  }
+}

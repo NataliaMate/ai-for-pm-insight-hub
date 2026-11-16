@@ -1,0 +1,1077 @@
+{
+  "persona": {
+    "id": "diner",
+    "name": "Diner",
+    "short": "Diner",
+    "tagline": "Guest who books where they found the place and wants to know they're booked",
+    "description": "Eats out several times a month and books from wherever they found the restaurant: Instagram DMs and bio links for Priya, direct texts and widgets for Marcus. Both want a clear confirmation and an easy way to cancel, but they split on channel (Priya ignores SMS, Marcus reads texts), apps (no for Priya, yes for Marcus's frequent places) and deposits. Being recognised drives Marcus's loyalty, while Priya calls it a bonus.",
+    "goals": [
+      "Book in under a minute from the Instagram bio or Google listing",
+      "Know for sure that the table is booked",
+      "Cancel or change without an awkward call",
+      "Wait somewhere other than the doorway",
+      "At regular places, never repeat allergies or preferences"
+    ],
+    "frustrations": [
+      "Places that only take phone bookings",
+      "DM replies that arrive after the plan has moved on",
+      "No confirmation, then no table on arrival",
+      "Deposits on ordinary dinners and fees they didn't see",
+      "Being a stranger after thirty visits"
+    ],
+    "products": [
+      "tably"
+    ],
+    "sources": [
+      "260903-lucia",
+      "260908-tomasz",
+      "260915-oksana",
+      "260922-devon",
+      "261001-priya",
+      "261008-marcus"
+    ],
+    "evidence_level": "moderate",
+    "evidence_note": "Two diners interviewed directly plus operators' second-hand views of their guests. Booking, confirmation and deposit findings draw on both diners and are corroborated by operators. Recognition and loyalty evidence comes almost entirely from Marcus, with Priya lukewarm, so that part is thin.",
+    "jobs": [
+      {
+        "id": "diner.j1",
+        "statement": "When I find a place on Instagram, I want to book from the bio link in under a minute without calling or installing an app, so I can lock the plan before friends lose interest.",
+        "importance": 3,
+        "stage": "diner.book_table",
+        "for": [
+          "261001-priya-09",
+          "261001-priya-02",
+          "261001-priya-05",
+          "261001-priya-10",
+          "261001-priya-23",
+          "260903-lucia-20",
+          "260908-tomasz-19",
+          "260915-oksana-12"
+        ],
+        "against": [
+          "261008-marcus-10",
+          "260922-devon-17",
+          "260908-tomasz-20"
+        ]
+      },
+      {
+        "id": "diner.j2",
+        "statement": "When I've booked, I want a clear confirmation, so I know I'm actually booked.",
+        "importance": 3,
+        "stage": "diner.get_confirmation",
+        "for": [
+          "261001-priya-07",
+          "261001-priya-08",
+          "261008-marcus-15"
+        ],
+        "against": []
+      },
+      {
+        "id": "diner.j3",
+        "statement": "When plans change, I want to cancel or edit by link, so I don't have to make an awkward call or text.",
+        "importance": 2,
+        "stage": "diner.change_or_cancel",
+        "for": [
+          "261001-priya-21",
+          "261008-marcus-15",
+          "260922-devon-16"
+        ],
+        "against": []
+      },
+      {
+        "id": "diner.j4",
+        "statement": "When I arrive or join a queue, I want to know how long and be free to wander off, so I'm not standing at the door.",
+        "importance": 2,
+        "stage": "diner.arrive_and_wait",
+        "for": [
+          "261001-priya-18",
+          "261001-priya-19",
+          "260915-oksana-09"
+        ],
+        "against": []
+      },
+      {
+        "id": "diner.j5",
+        "statement": "When I book a place I go to often, I want it to remember my partner's allergy and our table preference, so I never repeat them.",
+        "importance": 3,
+        "stage": "diner.be_recognized",
+        "for": [
+          "261008-marcus-08",
+          "261008-marcus-07",
+          "261008-marcus-13",
+          "261008-marcus-24",
+          "261008-marcus-03"
+        ],
+        "against": [
+          "261001-priya-22"
+        ]
+      },
+      {
+        "id": "diner.j6",
+        "statement": "When I'm asked for a deposit, I want it small, refundable and off the bill, so it feels like commitment rather than distrust.",
+        "importance": 2,
+        "stage": "diner.book_table",
+        "for": [
+          "261008-marcus-16",
+          "261008-marcus-17",
+          "261001-priya-14",
+          "260922-devon-12"
+        ],
+        "against": [
+          "261001-priya-15",
+          "261001-priya-16",
+          "260922-devon-11",
+          "260903-lucia-14"
+        ]
+      },
+      {
+        "id": "diner.j7",
+        "statement": "When I return to a favourite, I want to be welcomed back rather than given points, so I feel like someone, not a cover.",
+        "importance": 2,
+        "stage": "diner.come_back",
+        "for": [
+          "261008-marcus-21",
+          "261008-marcus-06",
+          "261008-marcus-02",
+          "261008-marcus-20"
+        ],
+        "against": [
+          "261001-priya-22"
+        ]
+      }
+    ]
+  },
+  "journey": [
+    {
+      "stage": "diner.discover_place",
+      "title": "Discover a place",
+      "goal": "Find somewhere good and see how to book it",
+      "emotion": 0,
+      "rows": {
+        "pains": [
+          {
+            "id": "diner.discover_place.p1",
+            "text": "Instagram saves sit for weeks, then the bio says 'call us'.",
+            "for": [
+              "261001-priya-01",
+              "261001-priya-02"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "diner.discover_place.j1",
+            "text": "Find the booking path where the place was discovered: Instagram bio, Google listing, DM auto-reply.",
+            "for": [
+              "261001-priya-23"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "diner.discover_place.t1",
+            "text": "Instagram saved folder; one big booking platform app that lacks local independents.",
+            "for": [
+              "261001-priya-01",
+              "261008-marcus-11"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "diner.discover_place.o1",
+            "text": "Tably helps only if the restaurant puts its link in the Instagram bio and Google listing.",
+            "for": [
+              "261001-priya-23",
+              "260903-lucia-21"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "diner.discover_place.f1",
+            "text": "No-account booking link for bio, Google and DM auto-reply",
+            "for": [
+              "261001-priya-23"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "diner.s1"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "diner.book_table",
+      "title": "Book a table",
+      "goal": "Secure a table fast without calling, an app or friction",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "diner.book_table.p1",
+            "text": "Priya won't call and switches places about twice a month when calling is the only way.",
+            "for": [
+              "261001-priya-02",
+              "261001-priya-03"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "diner.book_table.p2",
+            "text": "DM replies can arrive the next afternoon, after the group has moved on.",
+            "for": [
+              "261001-priya-05"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "diner.book_table.p3",
+            "text": "Widgets make Marcus retype name, email and phone after 30+ bookings.",
+            "for": [
+              "261008-marcus-13"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "diner.book_table.p4",
+            "text": "A deposit on an ordinary dinner feels like distrust to Priya.",
+            "for": [
+              "261001-priya-15",
+              "261001-priya-16"
+            ],
+            "against": [
+              "261008-marcus-16"
+            ],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "diner.book_table.j1",
+            "text": "Book in under a minute: date, time, done.",
+            "for": [
+              "261001-priya-09"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "diner.book_table.j2",
+            "text": "Add free-form requests like a stroller or window seat.",
+            "for": [
+              "260908-tomasz-20"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "diner.book_table.t1",
+            "text": "Instagram DM, WhatsApp, booking widgets, texting the owner directly, phone.",
+            "for": [
+              "261001-priya-04",
+              "261001-priya-11",
+              "261008-marcus-12"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "diner.book_table.o1",
+            "text": "A Tably booking link fits Priya as long as it needs no account or app.",
+            "for": [
+              "261001-priya-10",
+              "261001-priya-09"
+            ],
+            "against": [
+              "261008-marcus-10"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "diner.book_table.f1",
+            "text": "No-account booking link",
+            "for": [
+              "261001-priya-09",
+              "261001-priya-10"
+            ],
+            "against": [
+              "260908-tomasz-20"
+            ],
+            "assumption": false,
+            "solution": "diner.s1"
+          },
+          {
+            "id": "diner.book_table.f2",
+            "text": "Fair deposit flow for guests",
+            "for": [
+              "261008-marcus-17",
+              "260922-devon-12"
+            ],
+            "against": [
+              "261001-priya-15"
+            ],
+            "assumption": false,
+            "solution": "diner.s6"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "diner.get_confirmation",
+      "title": "Get confirmation and reminders",
+      "goal": "Know they're booked and be reminded in a channel they read",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "diner.get_confirmation.p1",
+            "text": "After a DM booking there was no confirmation and nothing in the book for four people.",
+            "for": [
+              "261001-priya-07"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "diner.get_confirmation.j1",
+            "text": "Get 'You're booked, Saturday, eight, four people'.",
+            "for": [
+              "261001-priya-08"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "diner.get_confirmation.j2",
+            "text": "Confirm with 'reply Y' or one tap, never a login.",
+            "for": [
+              "261001-priya-13",
+              "261008-marcus-15"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "diner.get_confirmation.t1",
+            "text": "Email confirmation and day-before SMS; Marcus reads texts, Priya ignores SMS and prefers DM or WhatsApp.",
+            "for": [
+              "261008-marcus-15"
+            ],
+            "against": [
+              "261001-priya-12"
+            ],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "diner.get_confirmation.o1",
+            "text": "Tably's confirmation channel choice is untested with diners.",
+            "for": [],
+            "against": [],
+            "assumption": true
+          }
+        ],
+        "features": [
+          {
+            "id": "diner.get_confirmation.f1",
+            "text": "Instant confirmation with one-tap confirm and cancel",
+            "for": [
+              "261001-priya-08",
+              "261001-priya-13"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "diner.s2"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "diner.change_or_cancel",
+      "title": "Change or cancel",
+      "goal": "Change or cancel without a call or guilt",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "diner.change_or_cancel.p1",
+            "text": "Cancelling by message feels guilty and awkward.",
+            "for": [
+              "261001-priya-21"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "diner.change_or_cancel.j1",
+            "text": "Add a person or cancel without calling.",
+            "for": [
+              "260922-devon-16"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "diner.change_or_cancel.t1",
+            "text": "Messages to the restaurant; 'reply 2 to cancel' texts.",
+            "for": [
+              "261001-priya-21",
+              "261008-marcus-15"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "diner.change_or_cancel.o1",
+            "text": "Tably has no tested guest cancel link yet.",
+            "for": [],
+            "against": [],
+            "assumption": true
+          }
+        ],
+        "features": [
+          {
+            "id": "diner.change_or_cancel.f1",
+            "text": "Cancel link in every confirmation",
+            "for": [
+              "261001-priya-21"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "diner.s2"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "diner.arrive_and_wait",
+      "title": "Arrive and wait",
+      "goal": "Wait without uncertainty or standing at the door",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "diner.arrive_and_wait.p1",
+            "text": "Arriving on time and waiting 20 minutes with no explanation.",
+            "for": [
+              "261001-priya-18"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "diner.arrive_and_wait.p2",
+            "text": "Four friends stood at the door when a DM booking wasn't in the book.",
+            "for": [
+              "261001-priya-07"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "diner.arrive_and_wait.j1",
+            "text": "Join a queue by QR, go for a walk, come back on a text.",
+            "for": [
+              "261001-priya-19"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "diner.arrive_and_wait.t1",
+            "text": "QR waitlist at a ramen place, used once.",
+            "for": [
+              "261001-priya-19"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "diner.arrive_and_wait.o1",
+            "text": "The Tably waitlist link covers this; guests will not pay to queue.",
+            "for": [
+              "261001-priya-19"
+            ],
+            "against": [
+              "261001-priya-20"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "diner.arrive_and_wait.f1",
+            "text": "Guest waitlist link with live position",
+            "for": [
+              "261001-priya-19",
+              "261001-priya-18"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "diner.s3"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "diner.be_recognized",
+      "title": "Be recognised at the table",
+      "goal": "Be known without repeating themselves",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "diner.be_recognized.p1",
+            "text": "After ~30 visits the Japanese counter still asks 'have you been here before?'.",
+            "for": [
+              "261008-marcus-05"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "diner.be_recognized.p2",
+            "text": "Repeating a partner's nut allergy every time is exhausting and a little scary.",
+            "for": [
+              "261008-marcus-08"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "diner.be_recognized.p3",
+            "text": "Preferences go into notes nobody may read.",
+            "for": [
+              "261008-marcus-14",
+              "260922-devon-19"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "diner.be_recognized.j1",
+            "text": "Keep one profile they update themselves.",
+            "for": [
+              "261008-marcus-07"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "diner.be_recognized.j2",
+            "text": "Have a birthday note actually reach the table.",
+            "for": [
+              "261008-marcus-23"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "diner.be_recognized.t1",
+            "text": "The Italian owner's memory; the tapas place's system flagged a birthday.",
+            "for": [
+              "261008-marcus-03",
+              "261008-marcus-04",
+              "261008-marcus-22"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "diner.be_recognized.o1",
+            "text": "Tably has no guest profile; evidence is one diner, and Priya calls recognition a bonus.",
+            "for": [
+              "261008-marcus-07"
+            ],
+            "against": [
+              "261001-priya-22"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "diner.be_recognized.f1",
+            "text": "Guest-owned preference profile",
+            "for": [
+              "261008-marcus-07",
+              "261008-marcus-24"
+            ],
+            "against": [
+              "261001-priya-22"
+            ],
+            "assumption": false,
+            "solution": "diner.s4"
+          },
+          {
+            "id": "diner.be_recognized.f2",
+            "text": "Regulars cues for staff",
+            "for": [
+              "261008-marcus-03",
+              "261008-marcus-22"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "diner.s5"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "diner.come_back",
+      "title": "Come back again",
+      "goal": "Keep returning to places that make them feel known",
+      "emotion": 1,
+      "rows": {
+        "pains": [
+          {
+            "id": "diner.come_back.p1",
+            "text": "Feeling invisible cut Marcus's visits from monthly to quarterly, without telling the restaurant.",
+            "for": [
+              "261008-marcus-06"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "diner.come_back.j1",
+            "text": "Rotate three favourites; the Italian 40–50 times in four years.",
+            "for": [
+              "261008-marcus-02"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "diner.come_back.t1",
+            "text": "Punch cards left in a drawer; one big platform app.",
+            "for": [
+              "261008-marcus-21",
+              "261008-marcus-11"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "diner.come_back.o1",
+            "text": "Tably has no repeat-guest features; loyalty evidence comes from one diner.",
+            "for": [
+              "261008-marcus-06"
+            ],
+            "against": [
+              "261001-priya-22"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "diner.come_back.f1",
+            "text": "Optional multi-restaurant guest app",
+            "for": [
+              "261008-marcus-09"
+            ],
+            "against": [
+              "261001-priya-10"
+            ],
+            "assumption": false,
+            "solution": "diner.s7"
+          },
+          {
+            "id": "diner.come_back.f2",
+            "text": "Regulars cues for staff",
+            "for": [
+              "261008-marcus-21",
+              "261008-marcus-06"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "diner.s5"
+          }
+        ]
+      }
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "diner.o1",
+      "title": "Book where I already am, without calling",
+      "stage": "diner.book_table",
+      "product": "tably",
+      "for": [
+        "261001-priya-02",
+        "261001-priya-04",
+        "261001-priya-09",
+        "261001-priya-23",
+        "261001-priya-11",
+        "260908-tomasz-21"
+      ],
+      "against": [
+        "260908-tomasz-20"
+      ]
+    },
+    {
+      "id": "diner.o2",
+      "title": "Know for sure I'm booked",
+      "stage": "diner.get_confirmation",
+      "product": "tably",
+      "for": [
+        "261001-priya-07",
+        "261001-priya-08",
+        "261001-priya-13",
+        "261008-marcus-15"
+      ],
+      "against": [
+        "261001-priya-12"
+      ]
+    },
+    {
+      "id": "diner.o3",
+      "title": "Cancel or change without the awkward call",
+      "stage": "diner.change_or_cancel",
+      "product": "tably",
+      "for": [
+        "261001-priya-21",
+        "260922-devon-16"
+      ],
+      "against": []
+    },
+    {
+      "id": "diner.o4",
+      "title": "Wait without standing at the door",
+      "stage": "diner.arrive_and_wait",
+      "product": "tably",
+      "for": [
+        "261001-priya-18",
+        "261001-priya-19",
+        "260915-oksana-09"
+      ],
+      "against": []
+    },
+    {
+      "id": "diner.o5",
+      "title": "Stop repeating allergies and preferences",
+      "stage": "diner.be_recognized",
+      "product": "tably",
+      "for": [
+        "261008-marcus-08",
+        "261008-marcus-07",
+        "261008-marcus-13",
+        "261008-marcus-14",
+        "261008-marcus-23",
+        "261008-marcus-24"
+      ],
+      "against": []
+    },
+    {
+      "id": "diner.o6",
+      "title": "Feel recognised as a regular",
+      "stage": "diner.come_back",
+      "product": "tably",
+      "for": [
+        "261008-marcus-03",
+        "261008-marcus-05",
+        "261008-marcus-06",
+        "261008-marcus-04",
+        "261008-marcus-22"
+      ],
+      "against": [
+        "261001-priya-22"
+      ]
+    },
+    {
+      "id": "diner.o7",
+      "title": "Deposits that feel fair",
+      "stage": "diner.book_table",
+      "product": "tably",
+      "for": [
+        "261008-marcus-16",
+        "261008-marcus-17",
+        "261001-priya-14",
+        "261001-priya-17",
+        "260922-devon-12"
+      ],
+      "against": [
+        "261001-priya-15",
+        "261001-priya-16",
+        "260922-devon-11",
+        "260903-lucia-14",
+        "261008-marcus-18"
+      ]
+    }
+  ],
+  "solutions": [
+    {
+      "id": "diner.s1",
+      "title": "Offer a no-account booking link",
+      "description": "A booking link for the Instagram bio, Google listing and DM auto-reply that books date, time and party size in under a minute, with no account or app and an optional free-text request.",
+      "product": "tably",
+      "personas": [
+        "diner"
+      ],
+      "stage": "diner.book_table",
+      "opportunities": [
+        "diner.o1"
+      ],
+      "kano": "must",
+      "reach": 5,
+      "impact": 3,
+      "confidence": 0.8,
+      "effort": 3,
+      "rationale": "Priya books this way today and owners and hosts agree guests won't download an app; Marcus and Devon see app value only for frequent guests.",
+      "for": [
+        "261001-priya-09",
+        "261001-priya-23",
+        "261001-priya-10",
+        "261001-priya-02",
+        "261001-priya-05",
+        "260903-lucia-20",
+        "260908-tomasz-19",
+        "260915-oksana-12",
+        "260922-devon-18"
+      ],
+      "against": [
+        "260908-tomasz-20",
+        "261008-marcus-10",
+        "260922-devon-17"
+      ]
+    },
+    {
+      "id": "diner.s2",
+      "title": "Confirm instantly with one-tap replies",
+      "description": "Send an immediate 'You're booked' confirmation and reminders over the guest's chosen channel (SMS, WhatsApp or DM) with reply-to-confirm and a cancel link, and no login.",
+      "product": "tably",
+      "personas": [
+        "diner"
+      ],
+      "stage": "diner.get_confirmation",
+      "opportunities": [
+        "diner.o2",
+        "diner.o3"
+      ],
+      "kano": "must",
+      "reach": 2,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 3,
+      "rationale": "Both diners want it and Priya was burned without it; the channel is contested (Priya ignores SMS, Marcus reads texts).",
+      "for": [
+        "261001-priya-07",
+        "261001-priya-08",
+        "261001-priya-13",
+        "261001-priya-21",
+        "261008-marcus-15"
+      ],
+      "against": [
+        "261001-priya-12"
+      ]
+    },
+    {
+      "id": "diner.s3",
+      "title": "Give waiting guests a live position link",
+      "description": "The guest side of the waitlist: a free link showing place in line and estimated wait, a table-ready text, and a cancel button.",
+      "product": "tably",
+      "personas": [
+        "diner"
+      ],
+      "stage": "diner.arrive_and_wait",
+      "opportunities": [
+        "diner.o4"
+      ],
+      "kano": "performance",
+      "reach": 2,
+      "impact": 2,
+      "confidence": 0.5,
+      "effort": 2,
+      "rationale": "One diner used a QR waitlist and loved it; host evidence supports it, but no paid skip-the-line, since Priya would never pay to queue.",
+      "for": [
+        "261001-priya-19",
+        "261001-priya-18",
+        "260915-oksana-24",
+        "260915-oksana-09"
+      ],
+      "against": [
+        "261001-priya-20"
+      ]
+    },
+    {
+      "id": "diner.s4",
+      "title": "Let guests keep a preference profile",
+      "description": "A guest-owned profile (allergies, seating, occasions) saved once and applied to every booking at that restaurant, visible to staff; cross-restaurant later.",
+      "product": "tably",
+      "personas": [
+        "diner"
+      ],
+      "stage": "diner.be_recognized",
+      "opportunities": [
+        "diner.o5",
+        "diner.o6"
+      ],
+      "kano": "performance",
+      "reach": 2,
+      "impact": 2,
+      "confidence": 0.5,
+      "effort": 8,
+      "rationale": "Strong pain and a stated willingness to pay, but from one diner only; Priya rejects accounts, so it must stay optional.",
+      "for": [
+        "261008-marcus-07",
+        "261008-marcus-08",
+        "261008-marcus-13",
+        "261008-marcus-24",
+        "261008-marcus-09",
+        "261008-marcus-22",
+        "261008-marcus-23",
+        "260922-devon-20"
+      ],
+      "against": [
+        "261001-priya-22",
+        "261001-priya-10"
+      ]
+    },
+    {
+      "id": "diner.s5",
+      "title": "Cue staff to recognise regulars",
+      "description": "Show visit count, preferences and occasions on the host screen with a 'welcome back' cue, so recognition survives staff turnover; no points.",
+      "product": "tably",
+      "personas": [
+        "diner"
+      ],
+      "stage": "diner.be_recognized",
+      "opportunities": [
+        "diner.o6"
+      ],
+      "kano": "delighter",
+      "reach": 1,
+      "impact": 1,
+      "confidence": 0.5,
+      "effort": 4,
+      "rationale": "Loyalty evidence is Marcus alone (thin), and Priya says she wouldn't choose a place for it.",
+      "for": [
+        "261008-marcus-03",
+        "261008-marcus-05",
+        "261008-marcus-06",
+        "261008-marcus-04",
+        "261008-marcus-21",
+        "261008-marcus-22",
+        "261008-marcus-02"
+      ],
+      "against": [
+        "261001-priya-22"
+      ]
+    },
+    {
+      "id": "diner.s6",
+      "title": "Make deposits transparent and fair",
+      "description": "Show a deposit only when the restaurant's rules require it, with the refund deadline, credit to the bill, a waiver for known regulars and explicit consent for any no-show fee.",
+      "product": "tably",
+      "personas": [
+        "diner"
+      ],
+      "stage": "diner.book_table",
+      "opportunities": [
+        "diner.o7"
+      ],
+      "kano": "performance",
+      "reach": 3,
+      "impact": 1,
+      "confidence": 0.5,
+      "effort": 3,
+      "rationale": "Diners split sharply; the safeguards come from stated preferences, plus one paid tasting-menu deposit.",
+      "for": [
+        "261008-marcus-16",
+        "261008-marcus-17",
+        "260922-devon-12",
+        "261001-priya-14",
+        "261001-priya-17",
+        "261008-marcus-18"
+      ],
+      "against": [
+        "261001-priya-15",
+        "261001-priya-16",
+        "260922-devon-11",
+        "260903-lucia-14"
+      ]
+    },
+    {
+      "id": "diner.s7",
+      "title": "Offer an optional multi-restaurant guest app",
+      "description": "An optional app holding a frequent diner's bookings and profile across independent restaurants, never required to book.",
+      "product": "tably",
+      "personas": [
+        "diner"
+      ],
+      "stage": "diner.come_back",
+      "opportunities": [
+        "diner.o6"
+      ],
+      "kano": "indifferent",
+      "reach": 2,
+      "impact": 0.5,
+      "confidence": 0.5,
+      "effort": 12,
+      "rationale": "Only Marcus (and tentatively Devon) want it; most interviewees reject apps, so it is indifferent for the majority and expensive.",
+      "for": [
+        "261008-marcus-09",
+        "261008-marcus-10",
+        "261008-marcus-11",
+        "261008-marcus-19",
+        "260922-devon-17"
+      ],
+      "against": [
+        "261001-priya-10",
+        "260903-lucia-20",
+        "260908-tomasz-19",
+        "260915-oksana-12",
+        "260922-devon-18",
+        "261008-marcus-20"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+node_modules/
+# your local settings (folders, Claude engine, API key): never commit this
+.insight-hub/
+.env
+.env.*
+.DS_Store
+*.log
+
+# instructor-only, never published
+INSTRUCTOR_NOTES.md

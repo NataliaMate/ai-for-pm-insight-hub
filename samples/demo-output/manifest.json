@@ -1,0 +1,34 @@
+{
+  "files": {
+    "2026-09-03_owner_lucia.md": {
+      "hash": "6564845c4ced1d66",
+      "sourceId": "260903-lucia",
+      "extractedAt": "2026-11-16T16:13:04.914Z"
+    },
+    "2026-09-08_owner_tomasz.md": {
+      "hash": "e7d2efb4a0652920",
+      "sourceId": "260908-tomasz",
+      "extractedAt": "2026-11-16T16:13:04.915Z"
+    },
+    "2026-09-15_host_oksana.txt": {
+      "hash": "8109546cc3bf7a63",
+      "sourceId": "260915-oksana",
+      "extractedAt": "2026-11-16T16:13:04.916Z"
+    },
+    "2026-09-22_floor-manager_devon.md": {
+      "hash": "2d76934d7238291b",
+      "sourceId": "260922-devon",
+      "extractedAt": "2026-11-16T16:13:04.917Z"
+    },
+    "2026-10-01_diner_priya.md": {
+      "hash": "23847a238d4ce916",
+      "sourceId": "261001-priya",
+      "extractedAt": "2026-11-16T16:13:04.918Z"
+    },
+    "2026-10-08_diner_marcus.md": {
+      "hash": "460d3590ec259509",
+      "sourceId": "261008-marcus",
+      "extractedAt": "2026-11-16T16:13:04.919Z"
+    }
+  }
+}

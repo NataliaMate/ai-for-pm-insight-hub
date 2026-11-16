@@ -1,0 +1,158 @@
+{
+  "product": {
+    "name": "Tably",
+    "description": "Tably is reservation, waitlist and guest-messaging software for independent restaurants and cafés. It is for owner-operators who run the book themselves, the hosts and floor managers who seat guests and manage the walk-in line during service, and the diners who book, wait and come back."
+  },
+  "products": [
+    {
+      "id": "tably",
+      "label": "Tably"
+    }
+  ],
+  "personas": [
+    {
+      "id": "restaurant_owner",
+      "name": "Independent restaurant owner",
+      "short": "Owner",
+      "description": "Owner-operator of a small trattoria or café who chooses and pays for the booking tool and keeps the book full, reliable and affordable."
+    },
+    {
+      "id": "front_of_house",
+      "name": "Front-of-house lead",
+      "short": "Host",
+      "description": "Host or floor manager who runs the door and the floor during service: the walk-in line, the phone, table status, guest notes and staffing."
+    },
+    {
+      "id": "diner",
+      "name": "Diner",
+      "short": "Diner",
+      "description": "Guest who finds a place, books or queues for a table, and decides whether to come back."
+    }
+  ],
+  "stages": {
+    "restaurant_owner": [
+      {
+        "id": "restaurant_owner.pick_tool",
+        "title": "Pick a booking tool"
+      },
+      {
+        "id": "restaurant_owner.set_up",
+        "title": "Set up and migrate"
+      },
+      {
+        "id": "restaurant_owner.take_bookings",
+        "title": "Take bookings from every channel"
+      },
+      {
+        "id": "restaurant_owner.reduce_no_shows",
+        "title": "Reduce no-shows"
+      },
+      {
+        "id": "restaurant_owner.run_service",
+        "title": "Seat and turn tables"
+      },
+      {
+        "id": "restaurant_owner.fill_gaps",
+        "title": "Fill empty slots"
+      },
+      {
+        "id": "restaurant_owner.review_costs",
+        "title": "Review cost and reliability"
+      }
+    ],
+    "front_of_house": [
+      {
+        "id": "front_of_house.plan_shift",
+        "title": "Plan the week's staffing"
+      },
+      {
+        "id": "front_of_house.answer_requests",
+        "title": "Answer calls and requests"
+      },
+      {
+        "id": "front_of_house.manage_waitlist",
+        "title": "Manage the walk-in line"
+      },
+      {
+        "id": "front_of_house.seat_guests",
+        "title": "Seat guests and track tables"
+      },
+      {
+        "id": "front_of_house.share_guest_notes",
+        "title": "Pass guest notes on"
+      },
+      {
+        "id": "front_of_house.recover_no_shows",
+        "title": "Recover no-show seats"
+      }
+    ],
+    "diner": [
+      {
+        "id": "diner.discover_place",
+        "title": "Discover a place"
+      },
+      {
+        "id": "diner.book_table",
+        "title": "Book a table"
+      },
+      {
+        "id": "diner.get_confirmation",
+        "title": "Get confirmation and reminders"
+      },
+      {
+        "id": "diner.change_or_cancel",
+        "title": "Change or cancel"
+      },
+      {
+        "id": "diner.arrive_and_wait",
+        "title": "Arrive and wait"
+      },
+      {
+        "id": "diner.be_recognized",
+        "title": "Be recognised at the table"
+      },
+      {
+        "id": "diner.come_back",
+        "title": "Come back again"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "product": "tably",
+      "name": "H1 SMS included, not metered",
+      "statement": "Owners prefer SMS reminders included in a flat subscription over per-message fees, and will pay a higher flat price for that."
+    },
+    {
+      "id": "H2",
+      "product": "tably",
+      "name": "H2 Link beats app",
+      "statement": "Diners would rather book or join a waitlist through a link or QR code than download an app."
+    },
+    {
+      "id": "H3",
+      "product": "tably",
+      "name": "H3 Targeted deposits",
+      "statement": "Deposits limited to large parties or prime slots cut no-shows without driving guests away."
+    },
+    {
+      "id": "H4",
+      "product": "tably",
+      "name": "H4 Capture DM bookings",
+      "statement": "Restaurants that take bookings over Instagram DMs and WhatsApp would save meaningful daily time if each message became a booking in one step."
+    },
+    {
+      "id": "H5",
+      "product": "tably",
+      "name": "H5 Self-serve waitlist",
+      "statement": "A self-serve QR or link waitlist that texts guests when their table is ready reduces walk-aways and empty-table time."
+    },
+    {
+      "id": "H6",
+      "product": "tably",
+      "name": "H6 Recognition drives return",
+      "statement": "Diners return more often to restaurants that remember their preferences and allergies than to ones that treat them as strangers."
+    }
+  ]
+}

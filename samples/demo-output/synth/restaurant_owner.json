@@ -1,0 +1,1220 @@
+{
+  "persona": {
+    "id": "restaurant_owner",
+    "name": "Independent restaurant owner",
+    "short": "Owner",
+    "tagline": "Owner-operator of a small trattoria or café who runs the book and pays for the tool",
+    "description": "Runs a 22–52 seat place with a partner and handles bookings personally, from phone, widget, Instagram DMs and WhatsApp. Lucia (Casa Verde) pays $79/month for BookBistro plus ~$40 in SMS overage and loses 25–30 minutes a day fixing the book; Tomasz (Kettle & Crumb) runs a WhatsApp-plus-paper-book flow he mostly considers fine. Both want boring reliability and no setup burden, but they split sharply on price ($89–90 all-in vs. $15–20), SMS and deposits.",
+    "goals": [
+      "Keep one reliable book with no double-bookings or overfilled nights",
+      "Keep no-shows low without hurting the friendly mood of the place",
+      "Pay one predictable price that matches the size of the business",
+      "Switch tools only in a quiet month and without retyping guest history"
+    ],
+    "frustrations": [
+      "Re-typing Instagram and WhatsApp bookings by hand every evening",
+      "Reminders that silently stop and support that takes three days",
+      "Metered SMS that turns a $79 plan into ~$120",
+      "Setup that demands floor plans, zones and turn times for a one-table café"
+    ],
+    "products": [
+      "tably"
+    ],
+    "sources": [
+      "260903-lucia",
+      "260908-tomasz",
+      "260915-oksana",
+      "260922-devon"
+    ],
+    "evidence_level": "moderate",
+    "evidence_note": "Two owners interviewed directly (Lucia, Tomasz), both with 'does'/'pays' evidence, plus second-hand remarks from a host (Oksana) and a floor manager (Devon) about their owners. The two owners run very different businesses (52-seat dinner trattoria vs. 22-seat café with a weekly supper), so most findings rest on one of them and disagree on SMS, deposits and price.",
+    "jobs": [
+      {
+        "id": "restaurant_owner.j1",
+        "statement": "When a booking arrives by phone, DM or WhatsApp, I want it in one book in one step, so I can stop re-typing and never double-book.",
+        "importance": 3,
+        "stage": "restaurant_owner.take_bookings",
+        "for": [
+          "260903-lucia-02",
+          "260903-lucia-07",
+          "260903-lucia-08",
+          "260908-tomasz-01",
+          "260908-tomasz-02",
+          "260908-tomasz-16",
+          "260908-tomasz-25"
+        ],
+        "against": [
+          "260908-tomasz-03"
+        ]
+      },
+      {
+        "id": "restaurant_owner.j2",
+        "statement": "When a booking's day comes, I want reminders to go out reliably, so I can keep no-shows near 9% instead of 15%.",
+        "importance": 3,
+        "stage": "restaurant_owner.reduce_no_shows",
+        "for": [
+          "260903-lucia-06",
+          "260903-lucia-05",
+          "260903-lucia-16",
+          "260908-tomasz-06"
+        ],
+        "against": [
+          "260908-tomasz-07",
+          "260908-tomasz-05"
+        ]
+      },
+      {
+        "id": "restaurant_owner.j3",
+        "statement": "When a large party books a prime night, I want a small deposit, so I can protect the food and seats I've committed.",
+        "importance": 2,
+        "stage": "restaurant_owner.reduce_no_shows",
+        "for": [
+          "260903-lucia-10",
+          "260903-lucia-11",
+          "260903-lucia-12",
+          "260903-lucia-13",
+          "260908-tomasz-14",
+          "260915-oksana-20",
+          "260922-devon-10"
+        ],
+        "against": [
+          "260908-tomasz-12",
+          "260908-tomasz-13",
+          "260908-tomasz-15"
+        ]
+      },
+      {
+        "id": "restaurant_owner.j4",
+        "statement": "When service is running, I want to see real table status and realistic turn times, so I can seat the next party without sticky notes.",
+        "importance": 2,
+        "stage": "restaurant_owner.run_service",
+        "for": [
+          "260903-lucia-03",
+          "260903-lucia-04",
+          "260903-lucia-09",
+          "260908-tomasz-18"
+        ],
+        "against": [
+          "260908-tomasz-10"
+        ]
+      },
+      {
+        "id": "restaurant_owner.j5",
+        "statement": "When a weeknight slot sits empty, I want to offer it to people waiting, so I can fill the 8:30 gap.",
+        "importance": 2,
+        "stage": "restaurant_owner.fill_gaps",
+        "for": [
+          "260903-lucia-23",
+          "260903-lucia-24"
+        ],
+        "against": []
+      },
+      {
+        "id": "restaurant_owner.j6",
+        "statement": "When I decide to switch tools, I want my guest history moved and a setup with no drawing or tutorial, so I can switch without retraining staff mid-season.",
+        "importance": 3,
+        "stage": "restaurant_owner.set_up",
+        "for": [
+          "260903-lucia-18",
+          "260903-lucia-19",
+          "260908-tomasz-10",
+          "260908-tomasz-17",
+          "260922-devon-24"
+        ],
+        "against": []
+      },
+      {
+        "id": "restaurant_owner.j7",
+        "statement": "When I look at what the tool costs, I want one all-in price that fits my size, so I can weigh it against a lost Saturday.",
+        "importance": 2,
+        "stage": "restaurant_owner.review_costs",
+        "for": [
+          "260903-lucia-01",
+          "260903-lucia-15",
+          "260903-lucia-17",
+          "260903-lucia-25",
+          "260908-tomasz-08",
+          "260908-tomasz-09",
+          "260922-devon-01"
+        ],
+        "against": []
+      },
+      {
+        "id": "restaurant_owner.j8",
+        "statement": "When the Wi-Fi or the vendor fails, I want a fallback, so I can still run the night.",
+        "importance": 1,
+        "stage": "restaurant_owner.run_service",
+        "for": [
+          "260908-tomasz-22",
+          "260903-lucia-05"
+        ],
+        "against": []
+      }
+    ]
+  },
+  "journey": [
+    {
+      "stage": "restaurant_owner.pick_tool",
+      "title": "Pick a booking tool",
+      "goal": "Choose a tool they trust without a long comparison or a big monthly fee",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "restaurant_owner.pick_tool.p1",
+            "text": "SeatNow's $49/month felt like twelve sourdough loaves a week to Tomasz, so he cancelled the trial a day before it converted.",
+            "for": [
+              "260908-tomasz-08"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.pick_tool.p2",
+            "text": "Tomasz is nervous about customers' phone numbers sitting in an unknown vendor's cloud after a booking-company leak.",
+            "for": [
+              "260908-tomasz-24"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.pick_tool.p3",
+            "text": "At Harbor & Pine, switching needs an owner who doesn't like change.",
+            "for": [
+              "260922-devon-24"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "restaurant_owner.pick_tool.j1",
+            "text": "Try a tool free for a month before committing, knowing the paper book may win.",
+            "for": [
+              "260908-tomasz-23"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "restaurant_owner.pick_tool.t1",
+            "text": "BookBistro Pro at $79/month (Casa Verde), a SeatNow trial at $49/month (Kettle & Crumb), SeatNow at ~$129/month (Harbor & Pine).",
+            "for": [
+              "260903-lucia-01",
+              "260908-tomasz-08",
+              "260922-devon-01"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "restaurant_owner.pick_tool.o1",
+            "text": "No interviewee uses Tably; a free or very cheap tier is the only entry point Tomasz would try.",
+            "for": [
+              "260908-tomasz-23",
+              "260908-tomasz-09"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "restaurant_owner.pick_tool.f1",
+            "text": "All-in pricing with a small-café tier",
+            "for": [
+              "260908-tomasz-09",
+              "260903-lucia-17"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "restaurant_owner.s8"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "restaurant_owner.set_up",
+      "title": "Set up and migrate",
+      "goal": "Get running with their guest history and without retraining or drawing anything",
+      "emotion": -2,
+      "rows": {
+        "pains": [
+          {
+            "id": "restaurant_owner.set_up.p1",
+            "text": "Two years of guest history, phone numbers and allergy notes sit in a BookBistro CSV with wrong columns.",
+            "for": [
+              "260903-lucia-18"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.set_up.p2",
+            "text": "SeatNow asked Tomasz to draw a floor plan and set turn times and zones for one long table.",
+            "for": [
+              "260908-tomasz-10"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.set_up.p3",
+            "text": "Retraining 12 staff before the holidays is a no-go; January is the only window Lucia would consider.",
+            "for": [
+              "260903-lucia-19"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "restaurant_owner.set_up.j1",
+            "text": "Start without a tutorial or a twenty-option screen.",
+            "for": [
+              "260908-tomasz-17"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "restaurant_owner.set_up.t1",
+            "text": "BookBistro CSV export; a hardback paper book with a page per day.",
+            "for": [
+              "260903-lucia-18",
+              "260908-tomasz-01"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "restaurant_owner.set_up.o1",
+            "text": "Tably has no tested import from BookBistro or a minimal one-table mode yet.",
+            "for": [],
+            "against": [],
+            "assumption": true
+          }
+        ],
+        "features": [
+          {
+            "id": "restaurant_owner.set_up.f1",
+            "text": "BookBistro import and no-drawing quick setup",
+            "for": [
+              "260903-lucia-18",
+              "260908-tomasz-10",
+              "260908-tomasz-17"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "restaurant_owner.s7"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "restaurant_owner.take_bookings",
+      "title": "Take bookings from every channel",
+      "goal": "Get every request into one correct book quickly",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "restaurant_owner.take_bookings.p1",
+            "text": "Phone and online bookings collide on one table once or twice a month because BookBistro's map doesn't refresh.",
+            "for": [
+              "260903-lucia-02"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.take_bookings.p2",
+            "text": "Lucia types about 15 Instagram and WhatsApp bookings into BookBistro every evening.",
+            "for": [
+              "260903-lucia-08"
+            ],
+            "against": [
+              "260908-tomasz-03"
+            ],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.take_bookings.p3",
+            "text": "BookBistro's Google button shows 'no availability' when tables are free, losing bookings unnoticed.",
+            "for": [
+              "260903-lucia-22"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.take_bookings.p4",
+            "text": "Tomasz once wrote Friday on the Thursday page: 14 guests arrived, the book said 6.",
+            "for": [
+              "260908-tomasz-04",
+              "260908-tomasz-25"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "restaurant_owner.take_bookings.j1",
+            "text": "Bring phone (~40%), widget (~35%), Instagram DMs and WhatsApp into one book.",
+            "for": [
+              "260903-lucia-07",
+              "260908-tomasz-01"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.take_bookings.j2",
+            "text": "Turn a WhatsApp message into a booking with one button.",
+            "for": [
+              "260908-tomasz-16"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "restaurant_owner.take_bookings.t1",
+            "text": "WhatsApp Business (~70% of Tomasz's supper bookings), paper book, BookBistro widget, Google listing and Instagram bio link.",
+            "for": [
+              "260908-tomasz-01",
+              "260908-tomasz-02",
+              "260903-lucia-07",
+              "260903-lucia-21"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "restaurant_owner.take_bookings.o1",
+            "text": "Gap: Tably doesn't capture DMs or WhatsApp; Tomasz says copying by hand only takes 10–15 minutes a day.",
+            "for": [
+              "260903-lucia-08"
+            ],
+            "against": [
+              "260908-tomasz-03"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "restaurant_owner.take_bookings.f1",
+            "text": "One-tap DM and WhatsApp capture",
+            "for": [
+              "260903-lucia-08",
+              "260908-tomasz-16"
+            ],
+            "against": [
+              "260908-tomasz-03"
+            ],
+            "assumption": false,
+            "solution": "restaurant_owner.s1"
+          },
+          {
+            "id": "restaurant_owner.take_bookings.f2",
+            "text": "Conflict-locked shared book with a capacity warning",
+            "for": [
+              "260903-lucia-02",
+              "260908-tomasz-18",
+              "260903-lucia-22"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "restaurant_owner.s2"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "restaurant_owner.reduce_no_shows",
+      "title": "Reduce no-shows",
+      "goal": "Make sure booked guests show up without souring the welcome",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "restaurant_owner.reduce_no_shows.p1",
+            "text": "When BookBistro's reminders stopped for 8 days, no-shows rose from ~9% to ~15%.",
+            "for": [
+              "260903-lucia-05",
+              "260903-lucia-06"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.reduce_no_shows.p2",
+            "text": "An 11-person Saturday no-show cost Casa Verde about $600.",
+            "for": [
+              "260903-lucia-11"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.reduce_no_shows.p3",
+            "text": "Per-message SMS fees push Lucia to send fewer reminders.",
+            "for": [
+              "260903-lucia-16"
+            ],
+            "against": [
+              "260922-devon-04"
+            ],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "restaurant_owner.reduce_no_shows.j1",
+            "text": "Deposit only parties of six or more on Fridays and Saturdays, at $15 a head.",
+            "for": [
+              "260903-lucia-10",
+              "260903-lucia-12",
+              "260903-lucia-13"
+            ],
+            "against": [
+              "260908-tomasz-12",
+              "260908-tomasz-13"
+            ],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.reduce_no_shows.j2",
+            "text": "Remind supper guests personally on the day over WhatsApp and call non-repliers.",
+            "for": [
+              "260908-tomasz-06",
+              "260908-tomasz-07"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "restaurant_owner.reduce_no_shows.t1",
+            "text": "BookBistro email and SMS reminders (300 texts included, 7¢ after); same-day WhatsApp messages by hand.",
+            "for": [
+              "260903-lucia-15",
+              "260908-tomasz-06"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "restaurant_owner.reduce_no_shows.o1",
+            "text": "Gap: owners disagree on paying for SMS at all; Tomasz relies on free WhatsApp and a ~3% no-show rate.",
+            "for": [
+              "260903-lucia-16"
+            ],
+            "against": [
+              "260908-tomasz-11",
+              "260908-tomasz-05"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "restaurant_owner.reduce_no_shows.f1",
+            "text": "Included reminders over SMS or WhatsApp with send monitoring",
+            "for": [
+              "260903-lucia-05",
+              "260903-lucia-16"
+            ],
+            "against": [
+              "260908-tomasz-07"
+            ],
+            "assumption": false,
+            "solution": "restaurant_owner.s3"
+          },
+          {
+            "id": "restaurant_owner.reduce_no_shows.f2",
+            "text": "Targeted refundable deposits for large parties and prime slots",
+            "for": [
+              "260903-lucia-10",
+              "260903-lucia-12"
+            ],
+            "against": [
+              "260908-tomasz-13"
+            ],
+            "assumption": false,
+            "solution": "restaurant_owner.s4"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "restaurant_owner.run_service",
+      "title": "Seat and turn tables",
+      "goal": "Know which tables are free and when, without side notes",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "restaurant_owner.run_service.p1",
+            "text": "BookBistro doesn't talk to Square, so the host tracks seated and paid tables on sticky notes.",
+            "for": [
+              "260903-lucia-03"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.run_service.p2",
+            "text": "Lucia spends 25–30 minutes a day fixing the book and her host another ~20 during service.",
+            "for": [
+              "260903-lucia-04"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.run_service.p3",
+            "text": "Fixed two-hour bookings ignore 90-minute Tuesdays and 2.5-hour Saturdays.",
+            "for": [
+              "260903-lucia-09"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "restaurant_owner.run_service.j1",
+            "text": "Keep running through Wi-Fi or power outages, which hit Kettle & Crumb twice last winter.",
+            "for": [
+              "260908-tomasz-22"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.run_service.j2",
+            "text": "Get warned before booking more than 22 people on one evening.",
+            "for": [
+              "260908-tomasz-18"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "restaurant_owner.run_service.t1",
+            "text": "Sticky notes, Square POS, the paper book as an offline backup.",
+            "for": [
+              "260903-lucia-03",
+              "260908-tomasz-22"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "restaurant_owner.run_service.o1",
+            "text": "Gap: no POS link or learned turn times; for a one-table café this screen may not matter at all.",
+            "for": [
+              "260903-lucia-03",
+              "260903-lucia-09"
+            ],
+            "against": [
+              "260908-tomasz-10"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "restaurant_owner.run_service.f1",
+            "text": "Live table status with Square sync and learned turn times",
+            "for": [
+              "260903-lucia-03",
+              "260903-lucia-09"
+            ],
+            "against": [
+              "260908-tomasz-10"
+            ],
+            "assumption": false,
+            "solution": "restaurant_owner.s5"
+          },
+          {
+            "id": "restaurant_owner.run_service.f2",
+            "text": "Offline-safe day sheet",
+            "for": [
+              "260908-tomasz-22"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "restaurant_owner.s9"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "restaurant_owner.fill_gaps",
+      "title": "Fill empty slots",
+      "goal": "Turn cancellations and quiet weeknight slots into covers",
+      "emotion": 0,
+      "rows": {
+        "pains": [
+          {
+            "id": "restaurant_owner.fill_gaps.p1",
+            "text": "The 8:30 slot on Tuesdays and Wednesdays rarely fills.",
+            "for": [
+              "260903-lucia-23"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "restaurant_owner.fill_gaps.j1",
+            "text": "Text waiting guests when a table opens.",
+            "for": [
+              "260903-lucia-24"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "restaurant_owner.fill_gaps.t1",
+            "text": "A paper waitlist on Saturdays that usually gets forgotten.",
+            "for": [
+              "260903-lucia-24"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "restaurant_owner.fill_gaps.o1",
+            "text": "Tably's waitlist could offer freed slots, but no owner has tested it; evidence is one owner's 'said'.",
+            "for": [
+              "260903-lucia-24"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "restaurant_owner.fill_gaps.f1",
+            "text": "Waitlist that offers freed slots by text",
+            "for": [
+              "260903-lucia-24",
+              "260903-lucia-23"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "restaurant_owner.s6"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "restaurant_owner.review_costs",
+      "title": "Review cost and reliability",
+      "goal": "Pay a fair, predictable price for something that doesn't break",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "restaurant_owner.review_costs.p1",
+            "text": "BookBistro's $79 plan becomes ~$120 with ~900 texts at 7¢ over the 300 included.",
+            "for": [
+              "260903-lucia-15"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "restaurant_owner.review_costs.p2",
+            "text": "Support starts with a chatbot and a human ticket took three days.",
+            "for": [
+              "260903-lucia-05"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "restaurant_owner.review_costs.j1",
+            "text": "Weigh the fee against a bad weekend's $300–400 loss, not the sticker price.",
+            "for": [
+              "260903-lucia-25"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "restaurant_owner.review_costs.t1",
+            "text": "BookBistro Pro $79 plus SMS overage; SeatNow ~$129/month at a 90-seat restaurant.",
+            "for": [
+              "260903-lucia-01",
+              "260922-devon-01"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "restaurant_owner.review_costs.o1",
+            "text": "Tably pricing is open: Lucia would pay $89–90 all-in, Tomasz $15–20 at most.",
+            "for": [
+              "260903-lucia-17",
+              "260908-tomasz-09"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "restaurant_owner.review_costs.f1",
+            "text": "All-in pricing tiers with SMS included",
+            "for": [
+              "260903-lucia-17",
+              "260903-lucia-15"
+            ],
+            "against": [
+              "260922-devon-04"
+            ],
+            "assumption": false,
+            "solution": "restaurant_owner.s8"
+          }
+        ]
+      }
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "restaurant_owner.o1",
+      "title": "Stop re-typing message bookings",
+      "stage": "restaurant_owner.take_bookings",
+      "product": "tably",
+      "for": [
+        "260903-lucia-08",
+        "260908-tomasz-02",
+        "260908-tomasz-16",
+        "261001-priya-04"
+      ],
+      "against": [
+        "260908-tomasz-03"
+      ]
+    },
+    {
+      "id": "restaurant_owner.o2",
+      "title": "Never double-book or overfill a night",
+      "stage": "restaurant_owner.take_bookings",
+      "product": "tably",
+      "for": [
+        "260903-lucia-02",
+        "260903-lucia-22",
+        "260908-tomasz-04",
+        "260908-tomasz-18",
+        "260908-tomasz-25"
+      ],
+      "against": []
+    },
+    {
+      "id": "restaurant_owner.o3",
+      "title": "Keep reminders flowing without a per-message penalty",
+      "stage": "restaurant_owner.reduce_no_shows",
+      "product": "tably",
+      "for": [
+        "260903-lucia-05",
+        "260903-lucia-06",
+        "260903-lucia-15",
+        "260903-lucia-16"
+      ],
+      "against": [
+        "260922-devon-04",
+        "260915-oksana-15",
+        "260908-tomasz-11"
+      ]
+    },
+    {
+      "id": "restaurant_owner.o4",
+      "title": "Protect big-party and prime-night covers",
+      "stage": "restaurant_owner.reduce_no_shows",
+      "product": "tably",
+      "for": [
+        "260903-lucia-10",
+        "260903-lucia-11",
+        "260903-lucia-12",
+        "260922-devon-10",
+        "260908-tomasz-14"
+      ],
+      "against": [
+        "260908-tomasz-12",
+        "260908-tomasz-13",
+        "261001-priya-15"
+      ]
+    },
+    {
+      "id": "restaurant_owner.o5",
+      "title": "Know when a table will really be free",
+      "stage": "restaurant_owner.run_service",
+      "product": "tably",
+      "for": [
+        "260903-lucia-03",
+        "260903-lucia-04",
+        "260903-lucia-09"
+      ],
+      "against": []
+    },
+    {
+      "id": "restaurant_owner.o6",
+      "title": "Fill weeknight gaps and late cancellations",
+      "stage": "restaurant_owner.fill_gaps",
+      "product": "tably",
+      "for": [
+        "260903-lucia-23",
+        "260903-lucia-24"
+      ],
+      "against": []
+    },
+    {
+      "id": "restaurant_owner.o7",
+      "title": "Switch without losing history or retraining",
+      "stage": "restaurant_owner.set_up",
+      "product": "tably",
+      "for": [
+        "260903-lucia-18",
+        "260903-lucia-19",
+        "260908-tomasz-10",
+        "260908-tomasz-17",
+        "260922-devon-24"
+      ],
+      "against": []
+    },
+    {
+      "id": "restaurant_owner.o8",
+      "title": "Pay a price that fits the size of the place",
+      "stage": "restaurant_owner.review_costs",
+      "product": "tably",
+      "for": [
+        "260903-lucia-15",
+        "260903-lucia-17",
+        "260908-tomasz-08",
+        "260908-tomasz-09"
+      ],
+      "against": []
+    },
+    {
+      "id": "restaurant_owner.o9",
+      "title": "Keep running when the internet or the vendor fails",
+      "stage": "restaurant_owner.run_service",
+      "product": "tably",
+      "for": [
+        "260908-tomasz-22",
+        "260903-lucia-05"
+      ],
+      "against": []
+    }
+  ],
+  "solutions": [
+    {
+      "id": "restaurant_owner.s1",
+      "title": "Capture DM and WhatsApp bookings",
+      "description": "Turn an Instagram DM or WhatsApp message into a booking in one tap, with the reply and confirmation sent back in the same thread. Removes the nightly re-typing and the wrong-page errors.",
+      "product": "tably",
+      "personas": [
+        "restaurant_owner"
+      ],
+      "stage": "restaurant_owner.take_bookings",
+      "opportunities": [
+        "restaurant_owner.o1"
+      ],
+      "kano": "performance",
+      "reach": 3,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 6,
+      "rationale": "Two owners do this manually today (Lucia ~15 messages a night), but Tomasz says it only costs him 10–15 minutes, so impact is high rather than massive.",
+      "for": [
+        "260903-lucia-07",
+        "260903-lucia-08",
+        "260908-tomasz-01",
+        "260908-tomasz-02",
+        "260908-tomasz-16",
+        "261001-priya-04",
+        "261001-priya-11"
+      ],
+      "against": [
+        "260908-tomasz-03"
+      ]
+    },
+    {
+      "id": "restaurant_owner.s2",
+      "title": "Lock the shared book against conflicts",
+      "description": "One real-time book for phone, widget, Google and messages that blocks double-bookings, keeps Google availability in sync and warns before a night exceeds capacity.",
+      "product": "tably",
+      "personas": [
+        "restaurant_owner"
+      ],
+      "stage": "restaurant_owner.take_bookings",
+      "opportunities": [
+        "restaurant_owner.o2"
+      ],
+      "kano": "must",
+      "reach": 2,
+      "impact": 3,
+      "confidence": 0.8,
+      "effort": 5,
+      "rationale": "Double-bookings and false 'no availability' cost real nights for both owners ('does' evidence), and reliability is the first thing Lucia asks for.",
+      "for": [
+        "260903-lucia-02",
+        "260903-lucia-22",
+        "260908-tomasz-04",
+        "260908-tomasz-18",
+        "260908-tomasz-25"
+      ],
+      "against": []
+    },
+    {
+      "id": "restaurant_owner.s3",
+      "title": "Include reminders in the plan",
+      "description": "Day-before and day-of reminders over SMS or WhatsApp with no per-message metering, plus an alert to the owner if sending ever stops. Keeps no-shows near Lucia's 9% instead of 15%.",
+      "product": "tably",
+      "personas": [
+        "restaurant_owner"
+      ],
+      "stage": "restaurant_owner.reduce_no_shows",
+      "opportunities": [
+        "restaurant_owner.o3"
+      ],
+      "kano": "must",
+      "reach": 2,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 4,
+      "rationale": "Reminders measurably cut no-shows at two restaurants, but several interviewees are fine paying per message and Tomasz won't pay for SMS at all.",
+      "for": [
+        "260903-lucia-05",
+        "260903-lucia-06",
+        "260903-lucia-15",
+        "260903-lucia-16",
+        "260903-lucia-17",
+        "260922-devon-03"
+      ],
+      "against": [
+        "260922-devon-04",
+        "260915-oksana-15",
+        "260908-tomasz-11",
+        "260908-tomasz-07"
+      ]
+    },
+    {
+      "id": "restaurant_owner.s4",
+      "title": "Add targeted refundable deposits",
+      "description": "Deposit rules by party size and slot (e.g. 6+ guests, Fri/Sat prime time), refundable until 24 hours before and credited to the bill, off by default for small parties and collected online so a card reader isn't needed.",
+      "product": "tably",
+      "personas": [
+        "restaurant_owner"
+      ],
+      "stage": "restaurant_owner.reduce_no_shows",
+      "opportunities": [
+        "restaurant_owner.o4"
+      ],
+      "kano": "performance",
+      "reach": 5,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 4,
+      "rationale": "Two restaurants run targeted deposits with large measured drops in no-shows, but a café owner and a diner reject deposits outright, so they must stay optional and targeted.",
+      "for": [
+        "260903-lucia-10",
+        "260903-lucia-11",
+        "260903-lucia-12",
+        "260903-lucia-13",
+        "260908-tomasz-14",
+        "260922-devon-10",
+        "260922-devon-13",
+        "260915-oksana-19",
+        "261008-marcus-16",
+        "261008-marcus-17"
+      ],
+      "against": [
+        "260908-tomasz-12",
+        "260908-tomasz-13",
+        "260908-tomasz-15",
+        "260903-lucia-14",
+        "261001-priya-15",
+        "261001-priya-16",
+        "260922-devon-11"
+      ]
+    },
+    {
+      "id": "restaurant_owner.s5",
+      "title": "Show live table status and learned turn times",
+      "description": "A fast floor view with seated, check-requested and cleared states synced from Square, plus turn times learned per weekday instead of a fixed two hours.",
+      "product": "tably",
+      "personas": [
+        "restaurant_owner"
+      ],
+      "stage": "restaurant_owner.run_service",
+      "opportunities": [
+        "restaurant_owner.o5"
+      ],
+      "kano": "performance",
+      "reach": 3,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 8,
+      "rationale": "Lucia's sticky notes and 25–30 minutes a day are 'does' evidence and hosts ask for the same status, but a one-table café explicitly doesn't want turn times or zones.",
+      "for": [
+        "260903-lucia-03",
+        "260903-lucia-04",
+        "260903-lucia-09",
+        "260915-oksana-21",
+        "260915-oksana-22",
+        "260922-devon-02"
+      ],
+      "against": [
+        "260908-tomasz-10"
+      ]
+    },
+    {
+      "id": "restaurant_owner.s6",
+      "title": "Offer freed slots to the waitlist",
+      "description": "When a booking cancels or a weeknight slot is empty, text people on the waitlist and let the first to tap take it.",
+      "product": "tably",
+      "personas": [
+        "restaurant_owner"
+      ],
+      "stage": "restaurant_owner.fill_gaps",
+      "opportunities": [
+        "restaurant_owner.o6"
+      ],
+      "kano": "delighter",
+      "reach": 2,
+      "impact": 1,
+      "confidence": 0.5,
+      "effort": 3,
+      "rationale": "Only one owner asked for it ('said'); diner and host evidence about texted waitlists is indirect.",
+      "for": [
+        "260903-lucia-23",
+        "260903-lucia-24",
+        "261001-priya-19"
+      ],
+      "against": []
+    },
+    {
+      "id": "restaurant_owner.s7",
+      "title": "Import history and set up in minutes",
+      "description": "Map a BookBistro CSV export automatically and offer a minimal mode with no floor plan, zones or turn times, with migration help scheduled for quiet months like January.",
+      "product": "tably",
+      "personas": [
+        "restaurant_owner"
+      ],
+      "stage": "restaurant_owner.set_up",
+      "opportunities": [
+        "restaurant_owner.o7"
+      ],
+      "kano": "must",
+      "reach": 3,
+      "impact": 2,
+      "confidence": 0.5,
+      "effort": 4,
+      "rationale": "Switching barriers are stated by both owners and a floor manager, but nobody has yet tried migrating, so evidence is 'said'.",
+      "for": [
+        "260903-lucia-18",
+        "260903-lucia-19",
+        "260908-tomasz-10",
+        "260908-tomasz-17",
+        "260922-devon-24"
+      ],
+      "against": []
+    },
+    {
+      "id": "restaurant_owner.s8",
+      "title": "Price all-in by size of venue",
+      "description": "One all-in price including reminders for full-service restaurants (around Lucia's $89–90) and a cheap tier around $15–20 for small cafés with one bookable service.",
+      "product": "tably",
+      "personas": [
+        "restaurant_owner"
+      ],
+      "stage": "restaurant_owner.review_costs",
+      "opportunities": [
+        "restaurant_owner.o8",
+        "restaurant_owner.o3"
+      ],
+      "kano": "performance",
+      "reach": 3,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 1,
+      "rationale": "Both owners name concrete prices but they differ by ~5x, so tiers matter more than the exact number; little build effort.",
+      "for": [
+        "260903-lucia-01",
+        "260903-lucia-15",
+        "260903-lucia-17",
+        "260903-lucia-25",
+        "260908-tomasz-08",
+        "260908-tomasz-09",
+        "260922-devon-01"
+      ],
+      "against": [
+        "260908-tomasz-11",
+        "260908-tomasz-23"
+      ]
+    },
+    {
+      "id": "restaurant_owner.s9",
+      "title": "Keep an offline-safe day sheet",
+      "description": "Cache the day's book on the device and offer a printable sheet so service continues through Wi-Fi or vendor outages.",
+      "product": "tably",
+      "personas": [
+        "restaurant_owner"
+      ],
+      "stage": "restaurant_owner.run_service",
+      "opportunities": [
+        "restaurant_owner.o9"
+      ],
+      "kano": "performance",
+      "reach": 2,
+      "impact": 0.5,
+      "confidence": 0.5,
+      "effort": 5,
+      "rationale": "Only Tomasz raised outages (twice last winter), plus Lucia's broken reminders as a vendor failure; thin evidence.",
+      "for": [
+        "260908-tomasz-22",
+        "260903-lucia-05"
+      ],
+      "against": []
+    }
+  ]
+}
