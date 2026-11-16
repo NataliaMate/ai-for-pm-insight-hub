@@ -1,34 +1,29 @@
 {
   "files": {
-    "2026-09-03_owner_lucia.md": {
-      "hash": "6564845c4ced1d66",
-      "sourceId": "260903-lucia",
-      "extractedAt": "2026-11-16T16:13:04.914Z"
+    "2026-09-04_ba_agency_daria.md": {
+      "hash": "419368b5c3d78782",
+      "sourceId": "260904-daria",
+      "extractedAt": "2026-11-16T17:29:16.153Z"
     },
-    "2026-09-08_owner_tomasz.md": {
-      "hash": "e7d2efb4a0652920",
-      "sourceId": "260908-tomasz",
-      "extractedAt": "2026-11-16T16:13:04.915Z"
+    "2026-09-11_ba_enterprise_henrik.md": {
+      "hash": "2ce3ce45ce78ccd9",
+      "sourceId": "260911-henrik",
+      "extractedAt": "2026-11-16T17:29:16.154Z"
     },
-    "2026-09-15_host_oksana.txt": {
-      "hash": "8109546cc3bf7a63",
-      "sourceId": "260915-oksana",
-      "extractedAt": "2026-11-16T16:13:04.916Z"
+    "2026-09-18_ba-pm_fintech_oksana.txt": {
+      "hash": "38cd8346087f8e14",
+      "sourceId": "260918-oksana",
+      "extractedAt": "2026-11-16T17:29:16.154Z"
     },
-    "2026-09-22_floor-manager_devon.md": {
-      "hash": "2d76934d7238291b",
-      "sourceId": "260922-devon",
-      "extractedAt": "2026-11-16T16:13:04.917Z"
+    "2026-09-25_pm_b2b-saas_marcus.md": {
+      "hash": "c46300453b0454d4",
+      "sourceId": "260925-marcus",
+      "extractedAt": "2026-11-16T17:29:16.154Z"
     },
-    "2026-10-01_diner_priya.md": {
-      "hash": "23847a238d4ce916",
-      "sourceId": "261001-priya",
-      "extractedAt": "2026-11-16T16:13:04.918Z"
-    },
-    "2026-10-08_diner_marcus.md": {
-      "hash": "460d3590ec259509",
-      "sourceId": "261008-marcus",
-      "extractedAt": "2026-11-16T16:13:04.919Z"
+    "2026-10-02_pm_marketplace_priya.md": {
+      "hash": "cc671b903f377c37",
+      "sourceId": "261002-priya",
+      "extractedAt": "2026-11-16T17:29:16.155Z"
     }
   }
 }

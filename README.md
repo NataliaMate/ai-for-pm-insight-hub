@@ -5,8 +5,10 @@ Turn a folder of customer-interview transcripts into a living product-research b
 Claude does the reading: it proposes a frame (personas + journey stages), tags every quote in each transcript, then synthesizes personas, journeys and scored features. You review and edit everything. The app runs **entirely on your own computer** — your transcripts and results never leave it, except the text sent to Claude for processing.
 
 > Built for the **"AI for Product Managers"** course. Fork it, run it locally, extend it.
+>
+> The bundled sample is deliberately meta: five fictional interviews with **Business Analysts and Product Managers** about the tools they use to build personas, journey maps, hypotheses and roadmaps — the very work this app does. Load the demo to see the board analyze them.
 
-![Personas, journey maps and a RICE list, all backed by interview quotes](samples/screenshot.png)
+![The demo board: BA and PM personas built from discovery interviews, each claim backed by quotes](samples/screenshot.png)
 
 ---
 
@@ -88,7 +90,7 @@ server/            local HTTP server + the pipeline
 public/            the single-page app (plain JS, no build step)
 scripts/           environment check run before start
 samples/
-  transcripts/     six fictional interviews about a demo product ("Tably")
+  transcripts/     five fictional interviews (3 BAs, 2 PMs) about product-discovery tooling
   demo-output/     a pre-built knowledge base for those interviews
 ```
 

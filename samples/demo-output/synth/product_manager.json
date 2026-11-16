@@ -1,0 +1,1025 @@
+{
+  "persona": {
+    "id": "product_manager",
+    "name": "Decision-Driven Product Manager",
+    "short": "Product Manager",
+    "tagline": "The PM who judges every artifact by whether it changes a decision",
+    "description": "At a B2B SaaS and a marketplace, the PM runs their own discovery, owns the roadmap fully and lives in Linear, Amplitude and call recordings. They want AI to transcribe, tag and surface clips, and would pay for that, but they refuse AI-synthesized personas because the sensemaking is the work. They disagree sharply among themselves: Marcus calls personas dead artifacts updated zero times in eighteen months, while Priya refreshes hers quarterly and insists the argument, not the document, is the output. Their recurring job is to make the roadmap defensible in a 45-minute exec review, opening with a customer clip rather than a slide of themes.",
+    "goals": [
+      "Make the roadmap defensible in the exec room, fast",
+      "Stop building something nobody asked for",
+      "Surface the right customer clips without scrubbing recordings",
+      "Keep the link from a clip to the Linear ticket alive",
+      "Get the whole squad to see what the PM saw"
+    ],
+    "frustrations": [
+      "Personas and journey maps go stale and become authoritative-looking but dead",
+      "Dovetail clips link to the whole project, not the moment, and do not survive",
+      "Rebuilding a demand spreadsheet by hand every quarter before the exec review",
+      "A new tool is a new silo, login and license to justify to finance",
+      "Juniors treating an AI persona as the answer"
+    ],
+    "products": [
+      "throughline"
+    ],
+    "sources": [
+      "260925-marcus",
+      "261002-priya",
+      "260918-oksana"
+    ],
+    "evidence_level": "strong",
+    "evidence_note": "Two PM interviews with heavy does/pays evidence, plus three cross-tagged quotes from Oksana, the BA/half-PM, who expresses product-manager jobs (260918-oksana-06, -10, -12). There is genuine intra-persona disagreement: Marcus treats personas as dead artifacts (260925-marcus-04, -09) while Priya maintains and values them (261002-priya-07, -08). Exec-roadmap communication rests only on the two PMs; the AI-synthesis refusal is strong across both, and is directly contradicted by the BA Oksana who is pro-synthesis (260918-oksana-15).",
+    "jobs": [
+      {
+        "id": "product_manager.j1",
+        "statement": "When I prep for a decision, I want the right customer clips surfaced automatically, so I stop scrubbing recordings.",
+        "importance": 3,
+        "stage": "product_manager.synthesize_insights",
+        "for": [
+          "261002-priya-15",
+          "260925-marcus-20",
+          "261002-priya-17"
+        ],
+        "against": []
+      },
+      {
+        "id": "product_manager.j2",
+        "statement": "When I move an insight to delivery, I want a Linear ticket linked to the exact clip, so the why survives three weeks later.",
+        "importance": 3,
+        "stage": "product_manager.prioritize_roadmap",
+        "for": [
+          "261002-priya-05",
+          "260925-marcus-23"
+        ],
+        "against": []
+      },
+      {
+        "id": "product_manager.j3",
+        "statement": "When I face execs, I want a one-pager of bets, the one metric and the demand behind each, so the roadmap is defensible in 45 minutes.",
+        "importance": 3,
+        "stage": "product_manager.communicate_execs",
+        "for": [
+          "260925-marcus-17",
+          "260925-marcus-18",
+          "261002-priya-13"
+        ],
+        "against": []
+      },
+      {
+        "id": "product_manager.j4",
+        "statement": "When research lands, I want the squad to see what I saw through a two-minute clip, so engineers build the right thing.",
+        "importance": 2,
+        "stage": "product_manager.communicate_execs",
+        "for": [
+          "261002-priya-25",
+          "261002-priya-26"
+        ],
+        "against": []
+      },
+      {
+        "id": "product_manager.j5",
+        "statement": "When I frame a bet, I want the problem, bet and metric with two or three quotes on the roadmap item, not in a separate tool.",
+        "importance": 2,
+        "stage": "product_manager.frame_bets",
+        "for": [
+          "260925-marcus-10",
+          "260925-marcus-11"
+        ],
+        "against": []
+      },
+      {
+        "id": "product_manager.j6",
+        "statement": "When I consider an artifact, I want it to change a decision or not exist, so nothing stale but authoritative survives.",
+        "importance": 2,
+        "stage": "product_manager.keep_fresh",
+        "for": [
+          "260925-marcus-08",
+          "260925-marcus-24"
+        ],
+        "against": [
+          "261002-priya-08"
+        ]
+      },
+      {
+        "id": "product_manager.j7",
+        "statement": "When I adopt a tool, it must replace something and cost under my team cap, so finance does not kill it in January.",
+        "importance": 2,
+        "stage": "product_manager.prioritize_roadmap",
+        "for": [
+          "261002-priya-21",
+          "260925-marcus-25"
+        ],
+        "against": [
+          "260925-marcus-22"
+        ]
+      },
+      {
+        "id": "product_manager.j8",
+        "statement": "When I own the roadmap, I want BAs in the discovery but not deciding what to build, so strategy stays PM work.",
+        "importance": 2,
+        "stage": "product_manager.prioritize_roadmap",
+        "for": [
+          "260925-marcus-14",
+          "261002-priya-16"
+        ],
+        "against": [
+          "260918-oksana-12"
+        ]
+      }
+    ]
+  },
+  "journey": [
+    {
+      "stage": "product_manager.plan_discovery",
+      "title": "Plan continuous discovery",
+      "goal": "Keep a steady cadence of customer conversations feeding the roadmap",
+      "emotion": 1,
+      "rows": {
+        "pains": [
+          {
+            "id": "product_manager.plan-discovery.p1",
+            "text": "Volume is high: 25-30 interviews a quarter personally, 60-70 across the team, hard to manage.",
+            "for": [
+              "261002-priya-01"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "product_manager.plan-discovery.j1",
+            "text": "Hold the discipline of weekly interviews, since the habit matters more than the tool.",
+            "for": [
+              "261002-priya-01"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "product_manager.plan-discovery.t1",
+            "text": "Zoom plus in-app recruiting prompts; Gong captures sales calls as a second stream.",
+            "for": [
+              "261002-priya-01",
+              "260925-marcus-02"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "product_manager.plan-discovery.u1",
+            "text": "Throughline would track interview cadence and link each session to the bets it informs.",
+            "for": [],
+            "against": [],
+            "assumption": true
+          }
+        ],
+        "features": []
+      }
+    },
+    {
+      "stage": "product_manager.talk_to_customers",
+      "title": "Talk to customers",
+      "goal": "Hear customers directly and keep a live line to them",
+      "emotion": 1,
+      "rows": {
+        "pains": [
+          {
+            "id": "product_manager.talk-to-customers.p1",
+            "text": "Listening to Gong recordings at 1.5x on the train is the only way to keep up.",
+            "for": [
+              "260925-marcus-02"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "product_manager.talk-to-customers.j1",
+            "text": "Keep a real, responsive line to customers rather than relying on archetypes.",
+            "for": [
+              "260925-marcus-03"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "product_manager.talk-to-customers.t1",
+            "text": "A Slack channel of customer champions who reply in forty minutes is Marcus's real persona.",
+            "for": [
+              "260925-marcus-03"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "product_manager.talk-to-customers.u1",
+            "text": "No tool today turns these live conversations into reusable, linkable clips automatically.",
+            "for": [
+              "260925-marcus-02"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": []
+      }
+    },
+    {
+      "stage": "product_manager.synthesize_insights",
+      "title": "Synthesize insights & personas",
+      "goal": "Turn calls into themes and clips the team will act on, without a dead persona",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "product_manager.synthesize-insights.p1",
+            "text": "Five tools (Zoom, Dovetail, Notion, Miro, Linear) and ~9 hours a week in Dovetail and Notion.",
+            "for": [
+              "261002-priya-03",
+              "261002-priya-04"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "product_manager.synthesize-insights.p2",
+            "text": "The link from an insight into Linear points to the whole Dovetail project, not the clip, and does not survive.",
+            "for": [
+              "261002-priya-05"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "product_manager.synthesize-insights.j1",
+            "text": "Surface where many calls mention the same thing, with links, without reading each by hand.",
+            "for": [
+              "260925-marcus-20",
+              "261002-priya-17"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "product_manager.synthesize-insights.t1",
+            "text": "Dovetail for tags and highlight reels, a Notion opportunities board; built by hand from ~40 interviews.",
+            "for": [
+              "261002-priya-06",
+              "261002-priya-04"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "product_manager.synthesize-insights.u1",
+            "text": "Tagging and clip-finding are wanted and paid for, but auto-persona synthesis is refused: the sensemaking is the work.",
+            "for": [
+              "261002-priya-17",
+              "260925-marcus-20"
+            ],
+            "against": [
+              "260925-marcus-21",
+              "261002-priya-18",
+              "261002-priya-19"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "product_manager.synthesize-insights.f1",
+            "text": "AI clip-finder that surfaces N-of-M call themes with one-click clips.",
+            "for": [
+              "260925-marcus-20",
+              "261002-priya-17",
+              "261002-priya-14"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "product_manager.s1"
+          },
+          {
+            "id": "product_manager.synthesize-insights.f2",
+            "text": "Consolidate Dovetail and the Notion board into one workspace that pushes to Linear.",
+            "for": [
+              "261002-priya-21",
+              "261002-priya-03"
+            ],
+            "against": [
+              "260925-marcus-22"
+            ],
+            "assumption": false,
+            "solution": "product_manager.s8"
+          },
+          {
+            "id": "product_manager.synthesize-insights.f3",
+            "text": "Optional, clearly-labeled draft synthesis a PM can shred, off by default so juniors do not paste it as truth.",
+            "for": [
+              "260918-oksana-15",
+              "260918-oksana-16"
+            ],
+            "against": [
+              "261002-priya-20",
+              "260925-marcus-21"
+            ],
+            "assumption": false,
+            "solution": "product_manager.s4"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "product_manager.map_journeys",
+      "title": "Map journeys & funnels",
+      "goal": "Understand the flow in a way that drives action, not a poster",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "product_manager.map-journeys.p1",
+            "text": "A printed journey poster sits on a wall unlooked-at; a map of emotions and smiley faces is not actionable.",
+            "for": [
+              "260925-marcus-05",
+              "260925-marcus-07"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "product_manager.map-journeys.j1",
+            "text": "See where users actually drop in the funnel, tied to backend events.",
+            "for": [
+              "260925-marcus-06",
+              "261002-priya-09"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "product_manager.map-journeys.t1",
+            "text": "Amplitude funnels for the real journey; Miro for a living map Priya updates every other month.",
+            "for": [
+              "260925-marcus-06",
+              "261002-priya-09"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "product_manager.map-journeys.u1",
+            "text": "Whether a journey map earns its keep splits the PMs: Marcus can't act on one, Priya keeps hers live and would not give up Miro.",
+            "for": [
+              "261002-priya-09",
+              "261002-priya-22"
+            ],
+            "against": [
+              "260925-marcus-07"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": []
+      }
+    },
+    {
+      "stage": "product_manager.frame_bets",
+      "title": "Frame bets & hypotheses",
+      "goal": "State the problem, the bet and the metric next to the work",
+      "emotion": 0,
+      "rows": {
+        "pains": [
+          {
+            "id": "product_manager.frame-bets.p1",
+            "text": "A separate hypothesis tool is unwanted; the bet should sit on the roadmap item itself.",
+            "for": [
+              "260925-marcus-10"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "product_manager.frame-bets.j1",
+            "text": "Attach problem, bet and metric with two or three representative quotes and a call link.",
+            "for": [
+              "260925-marcus-10",
+              "260925-marcus-11"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "product_manager.frame-bets.t1",
+            "text": "Linear ticket header carries the three lines; a standing rule requires a clip in sprint planning.",
+            "for": [
+              "260925-marcus-10",
+              "261002-priya-02"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "product_manager.frame-bets.u1",
+            "text": "Evidence depth is deliberately light: two or three quotes is enough, and the metric, not a footnote, settles a wrong bet.",
+            "for": [
+              "260925-marcus-11",
+              "261002-priya-10"
+            ],
+            "against": [
+              "260925-marcus-13"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "product_manager.frame-bets.f1",
+            "text": "Lean hypothesis-in-the-ticket with problem/bet/metric and 2-3 attached clips.",
+            "for": [
+              "260925-marcus-10",
+              "261002-priya-10"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "product_manager.s7"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "product_manager.prioritize_roadmap",
+      "title": "Prioritize & build roadmap",
+      "goal": "Order the work and keep the reasoning attached",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "product_manager.prioritize-roadmap.p1",
+            "text": "The official roadmap tool (Aha!) is not where the real work lives; the working roadmap is a Linear view.",
+            "for": [
+              "260925-marcus-01"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "product_manager.prioritize-roadmap.p2",
+            "text": "A new tool is a new silo, login and license to justify to finance, so it must sit inside Linear.",
+            "for": [
+              "260925-marcus-22",
+              "260925-marcus-23"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "product_manager.prioritize-roadmap.j1",
+            "text": "Keep the clip-to-ticket link alive from research into Linear.",
+            "for": [
+              "261002-priya-24",
+              "261002-priya-05"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "product_manager.prioritize-roadmap.t1",
+            "text": "Linear for the working roadmap and backlog; Aha! as the company standard.",
+            "for": [
+              "260925-marcus-01"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "product_manager.prioritize-roadmap.u1",
+            "text": "Ownership is contested: the PMs own roadmap as strategy, while the BA/half-PM argues whoever researches should own it.",
+            "for": [
+              "260925-marcus-14",
+              "261002-priya-16"
+            ],
+            "against": [
+              "260918-oksana-10",
+              "260918-oksana-12"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "product_manager.prioritize-roadmap.f1",
+            "text": "Clip-to-ticket Linear integration where the link resolves to the exact moment and status syncs.",
+            "for": [
+              "261002-priya-05",
+              "261002-priya-24",
+              "260925-marcus-23"
+            ],
+            "against": [
+              "260925-marcus-22"
+            ],
+            "assumption": false,
+            "solution": "product_manager.s2"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "product_manager.communicate_execs",
+      "title": "Communicate to execs",
+      "goal": "Win the quarterly roadmap review and answer why-this-not-that",
+      "emotion": -2,
+      "rows": {
+        "pains": [
+          {
+            "id": "product_manager.communicate-execs.p1",
+            "text": "A 45-minute quarterly review where CFO and sales want dates is Marcus's main stress.",
+            "for": [
+              "260925-marcus-15"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "product_manager.communicate-execs.p2",
+            "text": "He rebuilds a demand spreadsheet (who asked, revenue at stake) every quarter, ~6 hours; Priya scrubs clips ~2 hours monthly.",
+            "for": [
+              "260925-marcus-18",
+              "261002-priya-15"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "product_manager.communicate-execs.j1",
+            "text": "Open with a customer clip and show the one number that says a bet is working.",
+            "for": [
+              "261002-priya-13",
+              "260925-marcus-17"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "product_manager.communicate-execs.t1",
+            "text": "A now/next/later slide with confidence bands, and a hand-built demand spreadsheet.",
+            "for": [
+              "260925-marcus-16",
+              "260925-marcus-18"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "product_manager.communicate-execs.u1",
+            "text": "What execs want is demand and story, not archetypes; opening with a voice beats a slide of themes.",
+            "for": [
+              "260925-marcus-19",
+              "261002-priya-12"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "product_manager.communicate-execs.f1",
+            "text": "Exec one-pager: bets, the one metric and the demand (who asked, revenue) auto-assembled.",
+            "for": [
+              "260925-marcus-17",
+              "260925-marcus-18",
+              "261002-priya-13"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "product_manager.s3"
+          },
+          {
+            "id": "product_manager.communicate-execs.f2",
+            "text": "Shareable two-minute clips so an engineer can drop in and feel the customer.",
+            "for": [
+              "261002-priya-26",
+              "261002-priya-25"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "product_manager.s5"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "product_manager.keep_fresh",
+      "title": "Keep insights fresh",
+      "goal": "Avoid stale-but-authoritative artifacts",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "product_manager.keep-fresh.p1",
+            "text": "Personas updated zero times in eighteen months were, to Marcus, never load-bearing.",
+            "for": [
+              "260925-marcus-09"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "product_manager.keep-fresh.p2",
+            "text": "A stale tool is worse than no tool because people still trust it.",
+            "for": [
+              "260925-marcus-24"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "product_manager.keep-fresh.j1",
+            "text": "Refresh segments each quarter from new cohorts so a new segment can surface.",
+            "for": [
+              "261002-priya-08"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "product_manager.keep-fresh.t1",
+            "text": "Manual quarterly refresh in Miro and Notion, or no refresh at all.",
+            "for": [
+              "261002-priya-08",
+              "260925-marcus-09"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "product_manager.keep-fresh.u1",
+            "text": "Whether maintained artifacts are worth it is the core PM split: Priya refreshes and finds segments, Marcus and the BA see onboarding-only or dead.",
+            "for": [
+              "261002-priya-08"
+            ],
+            "against": [
+              "260925-marcus-09",
+              "260925-marcus-04",
+              "260918-oksana-06"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "product_manager.keep-fresh.f1",
+            "text": "Live, auto-refreshing insights that surface only when they change a decision.",
+            "for": [
+              "261002-priya-08",
+              "260925-marcus-24"
+            ],
+            "against": [
+              "260925-marcus-09"
+            ],
+            "assumption": false,
+            "solution": "product_manager.s6"
+          }
+        ]
+      }
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "product_manager.o1",
+      "title": "Find the right clips and themes without scrubbing recordings",
+      "stage": "product_manager.synthesize_insights",
+      "product": "throughline",
+      "for": [
+        "261002-priya-15",
+        "260925-marcus-20",
+        "261002-priya-17"
+      ],
+      "against": []
+    },
+    {
+      "id": "product_manager.o2",
+      "title": "Keep a clip's link alive from research into Linear",
+      "stage": "product_manager.prioritize_roadmap",
+      "product": "throughline",
+      "for": [
+        "261002-priya-05",
+        "260925-marcus-23"
+      ],
+      "against": []
+    },
+    {
+      "id": "product_manager.o3",
+      "title": "Make the roadmap defensible in the exec room, fast",
+      "stage": "product_manager.communicate_execs",
+      "product": "throughline",
+      "for": [
+        "260925-marcus-17",
+        "261002-priya-13"
+      ],
+      "against": []
+    },
+    {
+      "id": "product_manager.o4",
+      "title": "Decide whether personas and journeys are worth maintaining at all",
+      "stage": "product_manager.keep_fresh",
+      "product": "throughline",
+      "for": [
+        "261002-priya-08"
+      ],
+      "against": [
+        "260925-marcus-09",
+        "260925-marcus-04"
+      ]
+    },
+    {
+      "id": "product_manager.o5",
+      "title": "Don't add a sixth silo: consolidate or integrate",
+      "stage": "product_manager.synthesize_insights",
+      "product": "throughline",
+      "for": [
+        "261002-priya-21"
+      ],
+      "against": [
+        "260925-marcus-22"
+      ]
+    },
+    {
+      "id": "product_manager.o6",
+      "title": "Settle who owns the roadmap and keep BAs in discovery",
+      "stage": "product_manager.prioritize_roadmap",
+      "product": "throughline",
+      "for": [
+        "260925-marcus-14",
+        "261002-priya-16"
+      ],
+      "against": [
+        "260918-oksana-12"
+      ]
+    }
+  ],
+  "solutions": [
+    {
+      "id": "product_manager.s1",
+      "title": "AI clip-finder & theme surfacing",
+      "description": "Transcribe calls, tag them and surface patterns like fourteen of thirty calls mention re-sequencing, with one-click clips, and pull the three best clips for any roadmap item from a single place. It kills the hours of scrubbing before a review.",
+      "product": "throughline",
+      "personas": [
+        "product_manager"
+      ],
+      "stage": "product_manager.synthesize_insights",
+      "opportunities": [
+        "product_manager.o1"
+      ],
+      "kano": "performance",
+      "reach": 2,
+      "impact": 3,
+      "confidence": 1,
+      "effort": 5,
+      "rationale": "Both PMs explicitly want it and say they would pay, so pays evidence from two people supports full confidence.",
+      "for": [
+        "260925-marcus-20",
+        "261002-priya-17",
+        "261002-priya-14",
+        "261002-priya-26",
+        "261002-priya-05"
+      ],
+      "against": []
+    },
+    {
+      "id": "product_manager.s2",
+      "title": "Clip-to-ticket Linear integration",
+      "description": "One click turns an insight into a Linear ticket whose link resolves to the exact clip, not the whole project, and status syncs back. Throughline sits on top of Linear so the PM never has to visit a separate destination.",
+      "product": "throughline",
+      "personas": [
+        "product_manager"
+      ],
+      "stage": "product_manager.prioritize_roadmap",
+      "opportunities": [
+        "product_manager.o2"
+      ],
+      "kano": "must",
+      "reach": 2,
+      "impact": 3,
+      "confidence": 0.8,
+      "effort": 5,
+      "rationale": "Integration is the named precondition for adoption and for paying more; does evidence from both PMs.",
+      "for": [
+        "261002-priya-05",
+        "261002-priya-24",
+        "260925-marcus-23",
+        "261002-priya-21"
+      ],
+      "against": [
+        "260925-marcus-22"
+      ]
+    },
+    {
+      "id": "product_manager.s3",
+      "title": "Exec-ready roadmap one-pager with demand",
+      "description": "Assemble a now/next/later one-pager with confidence bands, the one metric per bet, and the demand behind each item (which customers asked, revenue at stake), so the PM stops rebuilding a spreadsheet every quarter and can answer why-this-not-that in seconds.",
+      "product": "throughline",
+      "personas": [
+        "product_manager"
+      ],
+      "stage": "product_manager.communicate_execs",
+      "opportunities": [
+        "product_manager.o3"
+      ],
+      "kano": "performance",
+      "reach": 2,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 4,
+      "rationale": "Clear does evidence but confined to the two PMs; the exec-communication job does not appear in the BA interviews.",
+      "for": [
+        "260925-marcus-17",
+        "260925-marcus-18",
+        "260925-marcus-16",
+        "261002-priya-13",
+        "261002-priya-15",
+        "261002-priya-12"
+      ],
+      "against": []
+    },
+    {
+      "id": "product_manager.s4",
+      "title": "Opt-in draft synthesis a PM can shred",
+      "description": "A clearly-labeled, editable draft persona built only from confirmable sources, off by default, with guardrails so a junior cannot paste it into a deck as the answer. It is deliberately minimal because PMs will not pay for synthesis.",
+      "product": "throughline",
+      "personas": [
+        "product_manager"
+      ],
+      "stage": "product_manager.synthesize_insights",
+      "opportunities": [
+        "product_manager.o1"
+      ],
+      "kano": "indifferent",
+      "reach": 1,
+      "impact": 0.5,
+      "confidence": 0.5,
+      "effort": 4,
+      "rationale": "Scored low on purpose: both PMs refuse AI synthesis, and the only pull is cross-persona from the BA Oksana.",
+      "for": [
+        "260918-oksana-15",
+        "260918-oksana-16"
+      ],
+      "against": [
+        "260925-marcus-21",
+        "261002-priya-18",
+        "261002-priya-19",
+        "261002-priya-20"
+      ]
+    },
+    {
+      "id": "product_manager.s5",
+      "title": "Shareable clips for the whole squad",
+      "description": "Make it trivial for an engineer to drop in, watch a two-minute clip and feel the customer, so research spreads and the team shares the understanding rather than one PM carrying it.",
+      "product": "throughline",
+      "personas": [
+        "product_manager"
+      ],
+      "stage": "product_manager.communicate_execs",
+      "opportunities": [
+        "product_manager.o3"
+      ],
+      "kano": "delighter",
+      "reach": 1,
+      "impact": 1,
+      "confidence": 0.5,
+      "effort": 3,
+      "rationale": "A compelling job but thin: carried mainly by Priya at said-level.",
+      "for": [
+        "261002-priya-25",
+        "261002-priya-26",
+        "261002-priya-02"
+      ],
+      "against": []
+    },
+    {
+      "id": "product_manager.s6",
+      "title": "Live, decision-gated insights",
+      "description": "Personas and journeys that refresh from new cohorts and only surface when they would change a decision, avoiding the stale-but-authoritative trap. It explicitly serves the PMs who maintain artifacts and sidesteps those who find them dead.",
+      "product": "throughline",
+      "personas": [
+        "product_manager"
+      ],
+      "stage": "product_manager.keep_fresh",
+      "opportunities": [
+        "product_manager.o4"
+      ],
+      "kano": "indifferent",
+      "reach": 2,
+      "impact": 1,
+      "confidence": 0.5,
+      "effort": 4,
+      "rationale": "Directly contested: Priya maintains and values refresh while Marcus and the BA call personas dead or onboarding-only, so confidence stays low.",
+      "for": [
+        "261002-priya-08",
+        "260925-marcus-24"
+      ],
+      "against": [
+        "260925-marcus-09",
+        "260925-marcus-04",
+        "260918-oksana-06"
+      ]
+    },
+    {
+      "id": "product_manager.s7",
+      "title": "Lean hypothesis-in-the-ticket",
+      "description": "Attach the problem, the bet and the metric to the roadmap item with two or three representative quotes and the call link, so the PM never opens a separate hypothesis tool.",
+      "product": "throughline",
+      "personas": [
+        "product_manager"
+      ],
+      "stage": "product_manager.frame_bets",
+      "opportunities": [
+        "product_manager.o3"
+      ],
+      "kano": "performance",
+      "reach": 2,
+      "impact": 1,
+      "confidence": 0.5,
+      "effort": 2,
+      "rationale": "Low effort and welcomed, but it mostly formalizes what Marcus already does by hand, so impact is modest.",
+      "for": [
+        "260925-marcus-10",
+        "260925-marcus-11",
+        "261002-priya-10"
+      ],
+      "against": []
+    },
+    {
+      "id": "product_manager.s8",
+      "title": "One-workspace consolidation (replace, don't add)",
+      "description": "Replace Dovetail and the Notion opportunity board with a single workspace doing clips, tags, the opportunity tree and push-to-Linear. It must replace tools, not become a sixth silo, or a PM like Marcus will refuse it outright.",
+      "product": "throughline",
+      "personas": [
+        "product_manager"
+      ],
+      "stage": "product_manager.synthesize_insights",
+      "opportunities": [
+        "product_manager.o5"
+      ],
+      "kano": "performance",
+      "reach": 1,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 6,
+      "rationale": "Priya would happily consolidate and pay more, but Marcus's stack-works stance keeps this from being a universal must.",
+      "for": [
+        "261002-priya-21",
+        "261002-priya-03",
+        "261002-priya-04",
+        "261002-priya-23"
+      ],
+      "against": [
+        "260925-marcus-22"
+      ]
+    }
+  ]
+}

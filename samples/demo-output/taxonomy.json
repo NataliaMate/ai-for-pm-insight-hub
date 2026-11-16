@@ -1,158 +1,134 @@
 {
   "product": {
-    "name": "Tably",
-    "description": "Tably is reservation, waitlist and guest-messaging software for independent restaurants and cafés. It is for owner-operators who run the book themselves, the hosts and floor managers who seat guests and manage the walk-in line during service, and the diners who book, wait and come back."
+    "name": "Throughline",
+    "description": "A product-discovery workspace for Business Analysts and Product Managers: build personas, journey maps, hypotheses and roadmaps with backlogs, with every claim linked to interview evidence. It sits between research (transcripts, clips) and delivery (Jira, Linear), turning tagged quotes into living personas, journeys and prioritized bets that keep their source links."
   },
   "products": [
     {
-      "id": "tably",
-      "label": "Tably"
+      "id": "throughline",
+      "label": "Throughline discovery workspace"
     }
   ],
   "personas": [
     {
-      "id": "restaurant_owner",
-      "name": "Independent restaurant owner",
-      "short": "Owner",
-      "description": "Owner-operator of a small trattoria or café who chooses and pays for the booking tool and keeps the book full, reliable and affordable."
+      "id": "business_analyst",
+      "name": "Traceability-Driven Business Analyst",
+      "short": "Business Analyst",
+      "description": "A BA in an agency, enterprise or lean startup who turns interviews into personas, journeys, requirements and backlog items and has to defend every requirement with a traceable source."
     },
     {
-      "id": "front_of_house",
-      "name": "Front-of-house lead",
-      "short": "Host",
-      "description": "Host or floor manager who runs the door and the floor during service: the walk-in line, the phone, table status, guest notes and staffing."
-    },
-    {
-      "id": "diner",
-      "name": "Diner",
-      "short": "Diner",
-      "description": "Guest who finds a place, books or queues for a table, and decides whether to come back."
+      "id": "product_manager",
+      "name": "Decision-Driven Product Manager",
+      "short": "Product Manager",
+      "description": "A PM who runs continuous discovery, owns the roadmap and backlog, and judges every artifact by whether it changes a decision or survives an executive review."
     }
   ],
   "stages": {
-    "restaurant_owner": [
+    "business_analyst": [
       {
-        "id": "restaurant_owner.pick_tool",
-        "title": "Pick a booking tool"
+        "id": "business_analyst.scope_research",
+        "title": "Scope & plan research"
       },
       {
-        "id": "restaurant_owner.set_up",
-        "title": "Set up and migrate"
+        "id": "business_analyst.gather_evidence",
+        "title": "Interview & gather evidence"
       },
       {
-        "id": "restaurant_owner.take_bookings",
-        "title": "Take bookings from every channel"
+        "id": "business_analyst.synthesize_personas",
+        "title": "Synthesize personas"
       },
       {
-        "id": "restaurant_owner.reduce_no_shows",
-        "title": "Reduce no-shows"
+        "id": "business_analyst.map_journeys",
+        "title": "Map customer journeys"
       },
       {
-        "id": "restaurant_owner.run_service",
-        "title": "Seat and turn tables"
+        "id": "business_analyst.frame_assumptions",
+        "title": "Frame & trace assumptions"
       },
       {
-        "id": "restaurant_owner.fill_gaps",
-        "title": "Fill empty slots"
+        "id": "business_analyst.specify_backlog",
+        "title": "Specify requirements & backlog"
       },
       {
-        "id": "restaurant_owner.review_costs",
-        "title": "Review cost and reliability"
+        "id": "business_analyst.sign_off_trace",
+        "title": "Review, sign-off & trace"
+      },
+      {
+        "id": "business_analyst.maintain_handoff",
+        "title": "Maintain artifacts & hand off"
       }
     ],
-    "front_of_house": [
+    "product_manager": [
       {
-        "id": "front_of_house.plan_shift",
-        "title": "Plan the week's staffing"
+        "id": "product_manager.plan_discovery",
+        "title": "Plan continuous discovery"
       },
       {
-        "id": "front_of_house.answer_requests",
-        "title": "Answer calls and requests"
+        "id": "product_manager.talk_to_customers",
+        "title": "Talk to customers"
       },
       {
-        "id": "front_of_house.manage_waitlist",
-        "title": "Manage the walk-in line"
+        "id": "product_manager.synthesize_insights",
+        "title": "Synthesize insights & personas"
       },
       {
-        "id": "front_of_house.seat_guests",
-        "title": "Seat guests and track tables"
+        "id": "product_manager.map_journeys",
+        "title": "Map journeys & funnels"
       },
       {
-        "id": "front_of_house.share_guest_notes",
-        "title": "Pass guest notes on"
+        "id": "product_manager.frame_bets",
+        "title": "Frame bets & hypotheses"
       },
       {
-        "id": "front_of_house.recover_no_shows",
-        "title": "Recover no-show seats"
-      }
-    ],
-    "diner": [
-      {
-        "id": "diner.discover_place",
-        "title": "Discover a place"
+        "id": "product_manager.prioritize_roadmap",
+        "title": "Prioritize & build roadmap"
       },
       {
-        "id": "diner.book_table",
-        "title": "Book a table"
+        "id": "product_manager.communicate_execs",
+        "title": "Communicate to execs"
       },
       {
-        "id": "diner.get_confirmation",
-        "title": "Get confirmation and reminders"
-      },
-      {
-        "id": "diner.change_or_cancel",
-        "title": "Change or cancel"
-      },
-      {
-        "id": "diner.arrive_and_wait",
-        "title": "Arrive and wait"
-      },
-      {
-        "id": "diner.be_recognized",
-        "title": "Be recognised at the table"
-      },
-      {
-        "id": "diner.come_back",
-        "title": "Come back again"
+        "id": "product_manager.keep_fresh",
+        "title": "Keep insights fresh"
       }
     ]
   },
   "hypotheses": [
     {
       "id": "H1",
-      "product": "tably",
-      "name": "H1 SMS included, not metered",
-      "statement": "Owners prefer SMS reminders included in a flat subscription over per-message fees, and will pay a higher flat price for that."
+      "product": "throughline",
+      "name": "H1 One tool over the stack",
+      "statement": "BAs and PMs would adopt a single discovery workspace instead of stitching Miro, Notion, Jira and Linear, but only if it integrates with their existing delivery tool rather than becoming a sixth silo."
     },
     {
       "id": "H2",
-      "product": "tably",
-      "name": "H2 Link beats app",
-      "statement": "Diners would rather book or join a waitlist through a link or QR code than download an app."
+      "product": "throughline",
+      "name": "H2 Tag yes, synthesis no",
+      "statement": "Users want AI to transcribe, tag quotes and find clips, but distrust AI-synthesized personas and journey maps unless every statement links to a confirmable source quote they can review."
     },
     {
       "id": "H3",
-      "product": "tably",
-      "name": "H3 Targeted deposits",
-      "statement": "Deposits limited to large parties or prime slots cut no-shows without driving guests away."
+      "product": "throughline",
+      "name": "H3 Traceability depth splits BA vs PM",
+      "statement": "Deep claim-to-source traceability (IDs, matrices, every claim sourced) is a must-have for BAs but is seen as overkill by most PMs, who source only the load-bearing claims."
     },
     {
       "id": "H4",
-      "product": "tably",
-      "name": "H4 Capture DM bookings",
-      "statement": "Restaurants that take bookings over Instagram DMs and WhatsApp would save meaningful daily time if each message became a booking in one step."
+      "product": "throughline",
+      "name": "H4 Dead artifacts",
+      "statement": "Personas and journey maps become dead, unmaintained artifacts after they are presented, unless maintaining them is funded or they visibly change a roadmap decision."
     },
     {
       "id": "H5",
-      "product": "tably",
-      "name": "H5 Self-serve waitlist",
-      "statement": "A self-serve QR or link waitlist that texts guests when their table is ready reduces walk-aways and empty-table time."
+      "product": "throughline",
+      "name": "H5 Price & procurement gate adoption",
+      "statement": "Enterprise adoption is gated by SSO, data residency and a nine-month procurement cycle, while agency and startup adoption is gated by a per-seat price anchored under an incumbent like Productboard or Dovetail."
     },
     {
       "id": "H6",
-      "product": "tably",
-      "name": "H6 Recognition drives return",
-      "statement": "Diners return more often to restaurants that remember their preferences and allergies than to ones that treat them as strangers."
+      "product": "throughline",
+      "name": "H6 Evidence beyond interviews",
+      "statement": "Users need to link non-interview evidence such as regulations, usage data, support tickets and complaints as first-class sources, not only interview quotes."
     }
   ]
 }

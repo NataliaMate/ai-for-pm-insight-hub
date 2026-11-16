@@ -1,0 +1,1090 @@
+{
+  "persona": {
+    "id": "business_analyst",
+    "name": "Traceability-Driven Business Analyst",
+    "short": "Business Analyst",
+    "tagline": "The analyst who has to prove where every requirement came from",
+    "description": "Across a digital agency, an enterprise insurer and a lean fintech, the BA turns interviews into personas, journeys, assumptions and backlog items and is accountable for correctness, not outcome. The sharpest pain is that quotes detach from their source: Daria hunts for which interview said a line, Henrik loses three hours a week to broken Jira links, and Oksana spends an hour each time someone asks where a backlog item came from. They want an AI first draft they can see the receipts for and a one-click link into Jira or Linear, but they split on how heavy the traceability should be and whether a synthesized persona can be signed.",
+    "goals": [
+      "Make the client or business confident they are building the right thing",
+      "Keep every claim linked to a confirmable source, from interview to requirement to ticket",
+      "Turn a pile of interviews into personas and journeys faster than a blank Miro board",
+      "Stop re-typing the same insight across Miro, Notion, Jira and Linear",
+      "Produce artifacts that survive sign-off, audit and handoff"
+    ],
+    "frustrations": [
+      "Quotes become un-sourced text the moment they land on a slide",
+      "Links break whenever a ticket is renamed, and the matrix is maintained by hand",
+      "Personas are a deliverable nobody is paid to keep alive",
+      "Prioritization scoring turns into theater rather than calculation",
+      "A new tool means another island, or a nine-month procurement cycle"
+    ],
+    "products": [
+      "throughline"
+    ],
+    "sources": [
+      "260904-daria",
+      "260911-henrik",
+      "260918-oksana"
+    ],
+    "evidence_level": "strong",
+    "evidence_note": "Three BA interviews with heavy does/pays evidence, plus two cross-tagged quotes from the PM interviews (260925-marcus-12, 261002-priya-11) where PMs describe the BA's sourcing discipline. Within the persona there is real disagreement on traceability depth: Henrik wants a full chain while Oksana explicitly rejects corporate ID matrices (260918-oksana-23). Accessibility/WCAG and non-interview evidence are thin: only Henrik raises them (260911-henrik-10, -11, -25).",
+    "jobs": [
+      {
+        "id": "business_analyst.j1",
+        "statement": "When I drop in an interview, I want a highlighted line to become a linked persona quote, journey pain and backlog source, so I can defend any requirement later.",
+        "importance": 3,
+        "stage": "business_analyst.gather_evidence",
+        "for": [
+          "260904-daria-15",
+          "260918-oksana-09",
+          "260911-henrik-13"
+        ],
+        "against": []
+      },
+      {
+        "id": "business_analyst.j2",
+        "statement": "When a stakeholder asks where a claim came from, I want to click to the exact clip in seconds, so I am not hunting across three tools.",
+        "importance": 3,
+        "stage": "business_analyst.sign_off_trace",
+        "for": [
+          "260904-daria-05",
+          "260918-oksana-24",
+          "260911-henrik-15"
+        ],
+        "against": [
+          "260918-oksana-23"
+        ]
+      },
+      {
+        "id": "business_analyst.j3",
+        "statement": "When I synthesize a persona, I want an AI first draft I can see the receipts for and edit, so I never start from a blank board.",
+        "importance": 2,
+        "stage": "business_analyst.synthesize_personas",
+        "for": [
+          "260904-daria-16",
+          "260904-daria-17",
+          "260918-oksana-15"
+        ],
+        "against": [
+          "260911-henrik-20"
+        ]
+      },
+      {
+        "id": "business_analyst.j4",
+        "statement": "When I move a pain into the backlog, I want a one-click linked ticket in Jira or Linear, so the reasoning survives the handoff.",
+        "importance": 3,
+        "stage": "business_analyst.specify_backlog",
+        "for": [
+          "260904-daria-08",
+          "260918-oksana-19"
+        ],
+        "against": []
+      },
+      {
+        "id": "business_analyst.j5",
+        "statement": "When I produce an artifact, I want it structured, accessible and version-controlled, so it passes audit and sign-off.",
+        "importance": 3,
+        "stage": "business_analyst.map_journeys",
+        "for": [
+          "260911-henrik-11",
+          "260911-henrik-26"
+        ],
+        "against": []
+      },
+      {
+        "id": "business_analyst.j6",
+        "statement": "When evidence is not an interview, I want to link a regulation or data point as a source too, so the chain is complete.",
+        "importance": 2,
+        "stage": "business_analyst.frame_assumptions",
+        "for": [
+          "260911-henrik-25"
+        ],
+        "against": []
+      },
+      {
+        "id": "business_analyst.j7",
+        "statement": "When I share with a client or hand off to devs, I want mobile-readable views and a public link, so the artifact does not go stale as a PDF.",
+        "importance": 2,
+        "stage": "business_analyst.maintain_handoff",
+        "for": [
+          "260904-daria-23",
+          "260904-daria-24"
+        ],
+        "against": []
+      },
+      {
+        "id": "business_analyst.j8",
+        "statement": "When I bring a new tool in, I want it priced under my incumbent anchor and able to pass SSO and procurement, so I can actually adopt it.",
+        "importance": 2,
+        "stage": "business_analyst.maintain_handoff",
+        "for": [
+          "260918-oksana-21",
+          "260911-henrik-24"
+        ],
+        "against": []
+      }
+    ]
+  },
+  "journey": [
+    {
+      "stage": "business_analyst.scope_research",
+      "title": "Scope & plan research",
+      "goal": "Decide what to learn and line up the interviews across competing projects",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "business_analyst.scope-research.p1",
+            "text": "The sole BA is stretched across four concurrent projects, one too many.",
+            "for": [
+              "260904-daria-01",
+              "260918-oksana-01"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "business_analyst.scope-research.p2",
+            "text": "Research time is squeezed: only 8-10 interviews a quarter when 20 are wanted.",
+            "for": [
+              "260918-oksana-03"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "business_analyst.scope-research.j1",
+            "text": "Juggle requirements, roadmap input and client conversations with a tiny team.",
+            "for": [
+              "260918-oksana-01"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "business_analyst.scope-research.t1",
+            "text": "Notion and Google Sheets to track who to talk to and what to ask.",
+            "for": [
+              "260918-oksana-02"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "business_analyst.scope-research.u1",
+            "text": "Throughline would hold a research plan tying questions to the assumptions they test.",
+            "for": [],
+            "against": [],
+            "assumption": true
+          }
+        ],
+        "features": []
+      }
+    },
+    {
+      "stage": "business_analyst.gather_evidence",
+      "title": "Interview & gather evidence",
+      "goal": "Capture interviews so that any line can later be reused and sourced",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "business_analyst.gather-evidence.p1",
+            "text": "Ten to twelve hours a week are lost moving notes across Miro, Notion, Linear, Sheets and Amplitude.",
+            "for": [
+              "260918-oksana-02"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "business_analyst.gather-evidence.p2",
+            "text": "Ukrainian interviews must be translated by hand before anything reaches English tickets.",
+            "for": [
+              "260918-oksana-26"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "business_analyst.gather-evidence.j1",
+            "text": "Make a highlighted line reusable as a persona quote, a journey pain and a backlog source at once.",
+            "for": [
+              "260904-daria-15"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "business_analyst.gather-evidence.t1",
+            "text": "Zoom to record, Notion for one page per interview.",
+            "for": [
+              "260918-oksana-02"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "business_analyst.gather-evidence.u1",
+            "text": "Today there is no single place that transcribes, translates and keeps every clip addressable.",
+            "for": [
+              "260918-oksana-26",
+              "260904-daria-15"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "business_analyst.gather-evidence.f1",
+            "text": "Highlight-to-artifact capture that keeps the source link on every reuse.",
+            "for": [
+              "260904-daria-15"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "business_analyst.s1"
+          },
+          {
+            "id": "business_analyst.gather-evidence.f2",
+            "text": "Bilingual transcript handling that keeps the original Ukrainian and translates.",
+            "for": [
+              "260918-oksana-26"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "business_analyst.s7"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "business_analyst.synthesize_personas",
+      "title": "Synthesize personas",
+      "goal": "Turn clustered evidence into a persona the team will trust",
+      "emotion": -2,
+      "rows": {
+        "pains": [
+          {
+            "id": "business_analyst.synthesize-personas.p1",
+            "text": "Clustering six interviews by hand is a full day, and building the persona takes up to six working days.",
+            "for": [
+              "260904-daria-04",
+              "260918-oksana-04"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "business_analyst.synthesize-personas.p2",
+            "text": "Once a quote is on a slide, the BA cannot find which interview it came from, and has misattributed one in the room.",
+            "for": [
+              "260904-daria-05",
+              "260904-daria-06"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "business_analyst.synthesize-personas.j1",
+            "text": "Get a grounded first-draft persona to edit rather than staring at a blank board.",
+            "for": [
+              "260904-daria-16",
+              "260918-oksana-14"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "business_analyst.synthesize-personas.t1",
+            "text": "Miro or FigJam stickies to cluster, Google Slides or Notion for the one-pager; Dovetail trialed but an island.",
+            "for": [
+              "260904-daria-03",
+              "260904-daria-19"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "business_analyst.synthesize-personas.u1",
+            "text": "An AI draft is welcome only with per-statement receipts; Henrik would still not sign a synthesized persona.",
+            "for": [
+              "260904-daria-17",
+              "260918-oksana-16"
+            ],
+            "against": [
+              "260911-henrik-18",
+              "260911-henrik-20"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "business_analyst.synthesize-personas.f1",
+            "text": "AI tagging and theme clustering that proposes a draft persona with confirmable source links.",
+            "for": [
+              "260904-daria-16",
+              "260918-oksana-13",
+              "260911-henrik-19"
+            ],
+            "against": [
+              "260911-henrik-20"
+            ],
+            "assumption": false,
+            "solution": "business_analyst.s3"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "business_analyst.map_journeys",
+      "title": "Map customer journeys",
+      "goal": "Produce a journey map that is both workshop-friendly and audit-ready",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "business_analyst.map-journeys.p1",
+            "text": "The map hangs in Miro while tasks live in Jira or Linear, and within a month they drift apart.",
+            "for": [
+              "260918-oksana-07",
+              "260904-daria-08"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "business_analyst.map-journeys.p2",
+            "text": "A Miro export is an image, not a controlled document, and a blind colleague literally cannot read it.",
+            "for": [
+              "260911-henrik-09",
+              "260911-henrik-11"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "business_analyst.map-journeys.j1",
+            "text": "Keep a structured, WCAG-compliant text version of every journey alongside the visual.",
+            "for": [
+              "260911-henrik-10"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "business_analyst.map-journeys.t1",
+            "text": "Miro or FigJam for the workshop, then redraw into Visio or a Confluence table.",
+            "for": [
+              "260904-daria-07",
+              "260911-henrik-08",
+              "260918-oksana-25"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "business_analyst.map-journeys.u1",
+            "text": "No tool today gives them structured-first, accessible, versioned maps without losing the collaborative whiteboard.",
+            "for": [
+              "260911-henrik-08",
+              "260904-daria-20"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "business_analyst.map-journeys.f1",
+            "text": "Structured, accessible, version-controlled artifacts with an approval trail and controlled export.",
+            "for": [
+              "260911-henrik-10",
+              "260911-henrik-11",
+              "260911-henrik-26"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "business_analyst.s5"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "business_analyst.frame_assumptions",
+      "title": "Frame & trace assumptions",
+      "goal": "Record assumptions and tie each to the evidence that tests it",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "business_analyst.frame-assumptions.p1",
+            "text": "Assumptions live in scattered Notion or Excel registers, often only half the projects or half the rows kept live.",
+            "for": [
+              "260904-daria-10",
+              "260918-oksana-08"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "business_analyst.frame-assumptions.p2",
+            "text": "Hypotheses link to a Notion page, not the exact moment, and metrics are pulled from Amplitude by hand.",
+            "for": [
+              "260904-daria-11",
+              "260918-oksana-08"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "business_analyst.frame-assumptions.j1",
+            "text": "Link a hypothesis to its interview quote, its metric and its ticket in one place.",
+            "for": [
+              "260918-oksana-09"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "business_analyst.frame-assumptions.t1",
+            "text": "Notion and Excel assumption registers, around forty rows per initiative.",
+            "for": [
+              "260911-henrik-12",
+              "260918-oksana-08"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "business_analyst.frame-assumptions.u1",
+            "text": "Non-interview evidence, regulations and data, should be linkable as first-class sources, which no current tool does.",
+            "for": [
+              "260911-henrik-25"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "business_analyst.frame-assumptions.f1",
+            "text": "Hypothesis objects that link quote, metric and ticket together.",
+            "for": [
+              "260918-oksana-09"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "business_analyst.s1"
+          },
+          {
+            "id": "business_analyst.frame-assumptions.f2",
+            "text": "Multi-source evidence so regulations, usage data and complaints are first-class sources.",
+            "for": [
+              "260911-henrik-25"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "business_analyst.s6"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "business_analyst.specify_backlog",
+      "title": "Specify requirements & backlog",
+      "goal": "Write requirements and backlog items that stay tied to their source",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "business_analyst.specify-backlog.p1",
+            "text": "A pain point is retyped from Miro into a Jira epic and then nobody in Jira knows where it came from.",
+            "for": [
+              "260904-daria-08"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "business_analyst.specify-backlog.p2",
+            "text": "RICE and value/effort scoring become theater, abandoned when management commits a promised feature.",
+            "for": [
+              "260904-daria-14",
+              "260918-oksana-11"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "business_analyst.specify-backlog.j1",
+            "text": "Create a linked Jira or Linear ticket from a pain or hypothesis without touching the delivery tool itself.",
+            "for": [
+              "260918-oksana-18",
+              "260918-oksana-19"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "business_analyst.specify-backlog.t1",
+            "text": "Jira, Linear and Google Sheets for backlog, a two-by-two in Miro for prioritization.",
+            "for": [
+              "260904-daria-13",
+              "260911-henrik-02"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "business_analyst.specify-backlog.u1",
+            "text": "They will not replace Linear or Jira, so Throughline must be the research layer that pushes into it.",
+            "for": [
+              "260918-oksana-18",
+              "260918-oksana-20"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "business_analyst.specify-backlog.f1",
+            "text": "Two-way Jira/Linear sync: one click to a linked ticket, status syncs back.",
+            "for": [
+              "260904-daria-08",
+              "260918-oksana-19",
+              "260918-oksana-20"
+            ],
+            "against": [
+              "260925-marcus-22"
+            ],
+            "assumption": false,
+            "solution": "business_analyst.s4"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "business_analyst.sign_off_trace",
+      "title": "Review, sign-off & trace",
+      "goal": "Get the artifact approved and prove every requirement is grounded",
+      "emotion": -2,
+      "rows": {
+        "pains": [
+          {
+            "id": "business_analyst.sign-off-trace.p1",
+            "text": "A renamed Jira ticket breaks the link; Henrik loses three hours a week fixing a hand-built matrix.",
+            "for": [
+              "260911-henrik-15"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "business_analyst.sign-off-trace.p2",
+            "text": "Someone asks where a backlog item came from and an hour disappears hunting across tools.",
+            "for": [
+              "260918-oksana-24"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "business_analyst.sign-off-trace.p3",
+            "text": "Three stakeholders return comments in three formats: Word, a PDF and an email.",
+            "for": [
+              "260911-henrik-05"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "business_analyst.sign-off-trace.j1",
+            "text": "Keep the chain interview-to-assumption-to-requirement-to-story intact so every claim links to a source.",
+            "for": [
+              "260911-henrik-13",
+              "260911-henrik-14"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "business_analyst.sign-off-trace.t1",
+            "text": "Excel traceability matrix and Confluence version history and approval workflow.",
+            "for": [
+              "260911-henrik-12",
+              "260911-henrik-26"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "business_analyst.sign-off-trace.u1",
+            "text": "How heavy traceability should be is contested: Henrik wants a full chain, Oksana wants only click-to-clip, and the PMs call matrices overkill.",
+            "for": [
+              "260911-henrik-14"
+            ],
+            "against": [
+              "260918-oksana-23",
+              "260904-daria-12",
+              "260925-marcus-12",
+              "261002-priya-11"
+            ],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "business_analyst.sign-off-trace.f1",
+            "text": "One-click trace report that keeps links from breaking and produces the audit pack.",
+            "for": [
+              "260911-henrik-22",
+              "260911-henrik-01",
+              "260911-henrik-15"
+            ],
+            "against": [
+              "260918-oksana-23",
+              "260925-marcus-12"
+            ],
+            "assumption": false,
+            "solution": "business_analyst.s2"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "business_analyst.maintain_handoff",
+      "title": "Maintain artifacts & hand off",
+      "goal": "Keep artifacts alive, share them, and clear procurement",
+      "emotion": -1,
+      "rows": {
+        "pains": [
+          {
+            "id": "business_analyst.maintain-handoff.p1",
+            "text": "Personas are a deliverable nobody is paid to maintain, and go stale, un-updated for a year.",
+            "for": [
+              "260904-daria-09",
+              "260918-oksana-05"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "business_analyst.maintain-handoff.p2",
+            "text": "At handoff the BA reconstructs a requirement's reasoning from about three tools.",
+            "for": [
+              "260904-daria-21"
+            ],
+            "against": [],
+            "assumption": false
+          },
+          {
+            "id": "business_analyst.maintain-handoff.p3",
+            "text": "A new system means a nine-month procurement cycle and nothing is considered without SSO.",
+            "for": [
+              "260911-henrik-21",
+              "260911-henrik-24"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "jobs": [
+          {
+            "id": "business_analyst.maintain-handoff.j1",
+            "text": "Share a living persona or journey without making the client create an account.",
+            "for": [
+              "260904-daria-24"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "tools": [
+          {
+            "id": "business_analyst.maintain-handoff.t1",
+            "text": "Exported PDFs and Miro boards, versus incumbent anchors Miro, Productboard and a retired requirements tool.",
+            "for": [
+              "260904-daria-18",
+              "260918-oksana-21"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "our_flow": [
+          {
+            "id": "business_analyst.maintain-handoff.u1",
+            "text": "Pricing must sit under the incumbent anchor, with agency/startup expensing under $25-35 and enterprise needing SSO on the cloud tenant.",
+            "for": [
+              "260904-daria-18",
+              "260918-oksana-22",
+              "260911-henrik-23"
+            ],
+            "against": [],
+            "assumption": false
+          }
+        ],
+        "features": [
+          {
+            "id": "business_analyst.maintain-handoff.f1",
+            "text": "Mobile-readable, public-link client sharing without forced accounts.",
+            "for": [
+              "260904-daria-23",
+              "260904-daria-24"
+            ],
+            "against": [],
+            "assumption": false,
+            "solution": "business_analyst.s8"
+          }
+        ]
+      }
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "business_analyst.o1",
+      "title": "Keep every claim linked to its source without maintaining a matrix by hand",
+      "stage": "business_analyst.sign_off_trace",
+      "product": "throughline",
+      "for": [
+        "260911-henrik-14",
+        "260904-daria-05",
+        "260918-oksana-24"
+      ],
+      "against": [
+        "260904-daria-12",
+        "260918-oksana-23"
+      ]
+    },
+    {
+      "id": "business_analyst.o2",
+      "title": "Turn a pile of interviews into a first-draft persona and journey fast, with receipts",
+      "stage": "business_analyst.synthesize_personas",
+      "product": "throughline",
+      "for": [
+        "260904-daria-16",
+        "260918-oksana-16",
+        "260911-henrik-19"
+      ],
+      "against": [
+        "260911-henrik-20"
+      ]
+    },
+    {
+      "id": "business_analyst.o3",
+      "title": "Stop re-typing insights between research and the delivery tool",
+      "stage": "business_analyst.specify_backlog",
+      "product": "throughline",
+      "for": [
+        "260904-daria-08",
+        "260918-oksana-19"
+      ],
+      "against": []
+    },
+    {
+      "id": "business_analyst.o4",
+      "title": "Make artifacts audit-ready: accessible, versioned and approvable",
+      "stage": "business_analyst.map_journeys",
+      "product": "throughline",
+      "for": [
+        "260911-henrik-11",
+        "260911-henrik-26"
+      ],
+      "against": []
+    },
+    {
+      "id": "business_analyst.o5",
+      "title": "Survive handoff and procurement: sharing, SSO and price",
+      "stage": "business_analyst.maintain_handoff",
+      "product": "throughline",
+      "for": [
+        "260904-daria-21",
+        "260911-henrik-21"
+      ],
+      "against": []
+    },
+    {
+      "id": "business_analyst.o6",
+      "title": "Treat non-interview evidence as a first-class source",
+      "stage": "business_analyst.frame_assumptions",
+      "product": "throughline",
+      "for": [
+        "260911-henrik-25"
+      ],
+      "against": []
+    }
+  ],
+  "solutions": [
+    {
+      "id": "business_analyst.s1",
+      "title": "Evidence-linked highlight-to-artifact",
+      "description": "Highlight a transcript line and reuse it as a persona quote, a journey pain and a backlog source while the link travels with it. Any artifact element can be clicked back to the exact clip, so requirements stay grounded.",
+      "product": "throughline",
+      "personas": [
+        "business_analyst"
+      ],
+      "stage": "business_analyst.gather_evidence",
+      "opportunities": [
+        "business_analyst.o1",
+        "business_analyst.o3"
+      ],
+      "kano": "must",
+      "reach": 3,
+      "impact": 3,
+      "confidence": 0.8,
+      "effort": 6,
+      "rationale": "Named by every BA as the core job, with does/pays evidence, but build reaches across capture, personas, journeys and backlog.",
+      "for": [
+        "260904-daria-15",
+        "260904-daria-05",
+        "260904-daria-11",
+        "260911-henrik-13",
+        "260911-henrik-14",
+        "260918-oksana-24",
+        "260918-oksana-09"
+      ],
+      "against": [
+        "260904-daria-12",
+        "260918-oksana-23"
+      ]
+    },
+    {
+      "id": "business_analyst.s2",
+      "title": "One-click trace report & link repair",
+      "description": "Keep the interview-to-requirement-to-ticket chain intact when tickets are renamed, and generate the audit trace pack in one click. It targets the enterprise evidence-gathering burden rather than everyday use.",
+      "product": "throughline",
+      "personas": [
+        "business_analyst"
+      ],
+      "stage": "business_analyst.sign_off_trace",
+      "opportunities": [
+        "business_analyst.o1",
+        "business_analyst.o5"
+      ],
+      "kano": "performance",
+      "reach": 1,
+      "impact": 2,
+      "confidence": 0.5,
+      "effort": 4,
+      "rationale": "High value but thin: Henrik alone carries the pays evidence, and two PMs plus Oksana call deep traceability overkill.",
+      "for": [
+        "260911-henrik-22",
+        "260911-henrik-01",
+        "260911-henrik-05",
+        "260911-henrik-15"
+      ],
+      "against": [
+        "260918-oksana-23",
+        "260904-daria-12",
+        "260925-marcus-12",
+        "261002-priya-11"
+      ]
+    },
+    {
+      "id": "business_analyst.s3",
+      "title": "AI tagging & draft synthesis with confirmable sources",
+      "description": "Auto-transcribe, tag quotes, cluster themes and propose a draft persona and journey where every statement links to the source quote the BA confirms. The draft is editable, never an unsourced black box.",
+      "product": "throughline",
+      "personas": [
+        "business_analyst"
+      ],
+      "stage": "business_analyst.synthesize_personas",
+      "opportunities": [
+        "business_analyst.o2"
+      ],
+      "kano": "performance",
+      "reach": 3,
+      "impact": 2,
+      "confidence": 0.8,
+      "effort": 5,
+      "rationale": "Strong demand for tagging plus a sourced draft, but synthesis trust is contested, so confidence rests on the confirm-each-tag design.",
+      "for": [
+        "260904-daria-16",
+        "260904-daria-17",
+        "260904-daria-25",
+        "260911-henrik-19",
+        "260918-oksana-13",
+        "260918-oksana-14",
+        "260918-oksana-16"
+      ],
+      "against": [
+        "260911-henrik-18",
+        "260911-henrik-20"
+      ]
+    },
+    {
+      "id": "business_analyst.s4",
+      "title": "Two-way Jira/Linear sync",
+      "description": "One click turns a pain or hypothesis into a Jira or Linear ticket with a backlink to the quote, and status changes sync back. Throughline stays the research layer; it never replaces the delivery tool.",
+      "product": "throughline",
+      "personas": [
+        "business_analyst"
+      ],
+      "stage": "business_analyst.specify_backlog",
+      "opportunities": [
+        "business_analyst.o3"
+      ],
+      "kano": "must",
+      "reach": 3,
+      "impact": 3,
+      "confidence": 0.8,
+      "effort": 5,
+      "rationale": "Integration is named mandatory and gates willingness to pay; does evidence across two BAs.",
+      "for": [
+        "260904-daria-08",
+        "260918-oksana-18",
+        "260918-oksana-19",
+        "260918-oksana-20",
+        "260911-henrik-15"
+      ],
+      "against": [
+        "260925-marcus-22"
+      ]
+    },
+    {
+      "id": "business_analyst.s5",
+      "title": "Structured, accessible, versioned artifacts",
+      "description": "Every persona and journey has a WCAG-compliant structured text representation with version history, an approval workflow and an audit trail, and exports as a controlled document, not just an image.",
+      "product": "throughline",
+      "personas": [
+        "business_analyst"
+      ],
+      "stage": "business_analyst.map_journeys",
+      "opportunities": [
+        "business_analyst.o4"
+      ],
+      "kano": "must",
+      "reach": 1,
+      "impact": 2,
+      "confidence": 0.5,
+      "effort": 4,
+      "rationale": "A hard enterprise requirement but thin: only Henrik raises accessibility and controlled-document needs.",
+      "for": [
+        "260911-henrik-10",
+        "260911-henrik-11",
+        "260911-henrik-09",
+        "260911-henrik-26",
+        "260911-henrik-06"
+      ],
+      "against": []
+    },
+    {
+      "id": "business_analyst.s6",
+      "title": "Multi-source evidence beyond interviews",
+      "description": "Link regulations, usage data, support tickets and complaints as first-class sources alongside interview quotes, so the assumption and requirement chain is complete for non-interview evidence.",
+      "product": "throughline",
+      "personas": [
+        "business_analyst"
+      ],
+      "stage": "business_analyst.frame_assumptions",
+      "opportunities": [
+        "business_analyst.o6"
+      ],
+      "kano": "performance",
+      "reach": 1,
+      "impact": 1,
+      "confidence": 0.5,
+      "effort": 3,
+      "rationale": "Clearly useful but thin: raised by Henrik alone, so impact and confidence are held low.",
+      "for": [
+        "260911-henrik-25"
+      ],
+      "against": []
+    },
+    {
+      "id": "business_analyst.s7",
+      "title": "Low-friction bilingual capture",
+      "description": "A draft in minutes with minimal required fields, and transcript handling that ingests Ukrainian interviews, keeps the original and translates quotes into the English used for tickets and docs.",
+      "product": "throughline",
+      "personas": [
+        "business_analyst"
+      ],
+      "stage": "business_analyst.gather_evidence",
+      "opportunities": [
+        "business_analyst.o2"
+      ],
+      "kano": "must",
+      "reach": 1,
+      "impact": 2,
+      "confidence": 0.5,
+      "effort": 3,
+      "rationale": "Bilingual handling is a hard blocker for Oksana, but evidence is single-interviewee and said-level.",
+      "for": [
+        "260918-oksana-26",
+        "260918-oksana-02"
+      ],
+      "against": []
+    },
+    {
+      "id": "business_analyst.s8",
+      "title": "Client-ready mobile & public-link sharing",
+      "description": "Read-only persona and journey views that are readable on a phone and shareable through a public link without forcing the client to create an account, so the shared artifact never goes stale as an exported PDF.",
+      "product": "throughline",
+      "personas": [
+        "business_analyst"
+      ],
+      "stage": "business_analyst.maintain_handoff",
+      "opportunities": [
+        "business_analyst.o5"
+      ],
+      "kano": "delighter",
+      "reach": 1,
+      "impact": 1,
+      "confidence": 0.5,
+      "effort": 2,
+      "rationale": "A clear agency need but thin: Daria alone, said-level, so scored as a low-effort delighter.",
+      "for": [
+        "260904-daria-23",
+        "260904-daria-24"
+      ],
+      "against": []
+    }
+  ]
+}
