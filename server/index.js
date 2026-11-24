@@ -8,7 +8,6 @@ import { listDir, listTranscripts, makeDir, readJson, writeJson } from "./lib/fi
 import { PUBLIC_DIR, ROOT } from "./lib/paths.js";
 import { cancelPipeline, normalizeTaxonomy, outPaths, pipelineStatus, startPipeline } from "./lib/pipeline.js";
 import { loadState, patchSolution, withState } from "./lib/state.js";
-import { warmFragment } from "./lib/warmup.js";
 
 // Insight Hub's local server. It only listens on this computer (127.0.0.1), and it only answers
 // requests addressed to localhost, so other machines and other websites can't use it.
@@ -54,7 +53,7 @@ function loadKb() {
 
 function serveStatic(req, res, pathname) {
   if (pathname === "/" || pathname === "/index.html") {
-    const html = fs.readFileSync(path.join(PUBLIC_DIR, "index.html"), "utf8").replace("</body>", `${warmFragment()}</body>`);
+    const html = fs.readFileSync(path.join(PUBLIC_DIR, "index.html"), "utf8");
     return send(res, 200, html, TYPES[".html"]);
   }
   const file = path.normalize(path.join(PUBLIC_DIR, decodeURIComponent(pathname)));
